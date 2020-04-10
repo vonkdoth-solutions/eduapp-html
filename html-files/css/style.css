@@ -14,14 +14,15 @@ body {
 .titileContainer > h5 {
 	color: #fc8448;
 	text-transform: uppercase;
-	font-size: 16px;
-	font-weight: 600;
+	font-size: 14px;
+	font-weight: 700;
 	margin-bottom: 0;
+	padding-bottom:3px;
 }
 .titileContainer > h3 {
-	font-weight: 600;
+	font-weight: 700;
 	text-transform: uppercase;
-	font-size: 36px;
+	font-size: 30px;
 }
 .Benifits-section{ background-color: #ffffff;}
 .benifits-wrap {
@@ -37,8 +38,8 @@ body {
 .benifits-wrap h5 {
 	margin-bottom: 0;
 	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 18px;
+	font-weight: 700;
+	font-size: 16px;
 	margin-top: 0.5rem;
 }
 .benifits-content h5 {
@@ -53,7 +54,9 @@ body {
 .benifits-content .know-more {
 	color: #fff;
 	text-decoration: underline;
+	font-size:14px;
 }
+.about-section p{ font-size:14px; color:#000;}
 /* entire container, keeps perspective */
 .flip-container {
 	-webkit-perspective: 1000;
@@ -122,7 +125,7 @@ body {
 	text-align: left;
 }
 .learning-section{
-    background-color:#f2f2f2;
+    background-color:#f5f5f5;
 }
 /* tabsContainer */
 .tabsContainer .nav-pills .nav-link {
@@ -143,6 +146,87 @@ body {
 	margin: 0 5px;
 }
 /* tabsContainer End */
+
+/* cus styles */
+.border-dec{ width:140px; margin:0px auto; text-align:center; position:relative;}
+.border-dec::before{ position:absolute; border-top:1px solid #ccc; width:100%; top:15px; content:""; left:0px;}
+.border-dec label{position: relative;z-index: 9999;background: #fff;padding: 0px 5px;}
+.learning-section .border-dec label{ background:#f2f2f2;}
+.product-grid{ padding:7px; background:#fff; position:relative; -webkit-box-shadow: -1px 10px 5px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 10px 5px -11px rgba(0,0,0,0.75);
+box-shadow: -1px 10px 5px -11px rgba(0,0,0,0.75);}
+.product-content h3 a{ font-size:17px; color:#333333; text-transform:uppercase; }
+.product-content .add-info{ overflow:hidden; margin-bottom:10px;}
+.product-content .add-info span{ float:left; font-size:15px;}
+.product-content .add-info span:nth-child(2){ float:right;}
+.flip-container .back p{ font-size:14px;}
+.btn{ font-size:14px; font-weight:700; padding: 9px 37px;}
+.box {
+  position: relative;
+  background: #EEE;
+}
+.ribbon {
+  position: absolute;
+  left: -12px; top: -13px;
+  z-index: 1;
+  overflow: hidden;
+  width: 95px; height: 95px;
+  text-align: right;
+}
+.ribbon span {
+  font-size: 10px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  width: 130px;
+  display: block;
+  background: #79A70A;
+  background: linear-gradient(#5a9603 0%, #72ab20 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 31px; left: -25px;
+}
+.ribbon span.new{ background: #fa7406;
+  background: linear-gradient(#f48b13 0%, #fa7406 100%);}
+
+.ribbon span::before {
+  content: "";
+  position: absolute; left: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid #79A70A;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79A70A;
+}
+.ribbon span::after {
+  content: "";
+  position: absolute; right: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #79A70A;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79A70A;
+}
+.product-content{ padding:10px 0px 13px 0px;}
+.bg-con{ background:#f5f5f5; padding:60px 0px;}
+.cust-bbb{ position:relative;}
+.cust-bbb::after{ content:""; position:absolute; border-bottom:1px solid #dcdcdc; left:0px; width:100%; bottom:0px;}
+.cust-bbb::before{ content:""; position:absolute; border-bottom:1px solid #dcdcdc; left:0px; width:100%; bottom:4px;}
+
+.footer-bb1 h5{ font-size:16px; font-weight:700; color:#c2c2c2; padding:15px 0px;}
+.footer-bb1 .social a{ margin-right:7px;}
+.footer-con{ padding:60px 0px;}
+.footer-bb2 h5{ font-size:16px; font-weight:700; color:#c2c2c2; padding:0px 0px 15px 0px;}
+.footer-bb2 ul{ list-style:none; padding-left:0px;}
+.footer-bb2 ul li{}
+.footer-bb2 ul li a{ color:#666; font-size:14px;}
+.newsletter-input{ background:#e6e8eb; border-radius:20px !important;}
+.subs{ width: 100%;color: #000;background: #fd7f4a;margin-top: 10px;border-radius: 20px;}
+/* cus styles */
 
 @media (max-width: 992px) {
     .container {
