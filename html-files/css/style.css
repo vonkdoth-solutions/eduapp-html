@@ -227,6 +227,25 @@ box-shadow: -1px 10px 5px -11px rgba(0,0,0,0.75);}
 .footer-bb2 ul li a{ color:#666; font-size:14px;}
 .newsletter-input{ background:#e6e8eb; border-radius:20px !important;}
 .subs{ width: 100%;color: #000;background: #fd7f4a;margin-top: 10px;border-radius: 20px;}
+.login-container h2{ text-align:center; margin:30px 0px; font-size:24px; font-weight:lighter;}
+.login-container h4{ font-size:16px; font-weight:700;}
+.tabsContainer .nav-pills .nav-link{ font-size:16px; color:#04243b; padding: 7px 26px;}
+
+.login-container{ width:350px; margin:0px auto;}
+.form-register .form-label-group{ margin-bottom:9px; position:relative;}
+.custom-control-label{ font-size:14px; text-align:left; padding-left:25px;}
+.custom-control-input:checked ~ .custom-control-label::before{ background:#007791; border-color:transparent;}
+.custom-checkbox .custom-control-label::before{ background:#007791;}
+.custom-control-label::after { left:0px; }
+.custom-control-label::before{ left:0px; }
+.info-lbl{ font-size:14px; padding:20px 0px; text-align:left; border-bottom:1px solid #ccc; }
+.info-lbl a{ color:#cccccc;}
+.account-have{ font-size:18px; text-align:center;}
+.account-have a{ color:#007791; padding:15px 0px;}
+.form-control.full-name{ background:url(../images/user.png) no-repeat 5px center; padding-left:27px;}
+.form-control.mail-icon{ background:url(../images/email.png) no-repeat 5px center; padding-left:27px;}
+.form-control.lock{ background:url(../images/lock.png) no-repeat 5px center; padding-left:27px;}
+.form-control.full-name, .form-control.mail-icon, .form-control.lock{ height:41px; borde-color:#8a92a3;}
 /* cus styles */
 
 @media (max-width: 992px) {
