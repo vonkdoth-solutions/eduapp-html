@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import url("variable.css");
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -12,7 +13,7 @@ body {
 	text-align: center;
 }
 .titileContainer > h5 {
-	color: #fc8448;
+	color:var(--edu-primary);
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 700;
