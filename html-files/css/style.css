@@ -3,6 +3,23 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+/*Defult*/
+.btn-primary {
+	color: #ffffff;
+}
+.btn-primary:focus, .btn-primary.focus {
+	box-shadow: none;
+}
+.form-control:focus {
+	box-shadow: none;
+}
+.navbar-toggler {
+	margin-top: 1rem;
+}
+.navbar-toggler > i{
+	color:var(--edu-primary);
+}
+/*Defult End*/
 .img-100{
     width: 100%;
 }
@@ -225,8 +242,8 @@ box-shadow: -1px 10px 5px -11px rgba(0,0,0,0.75);}
 .footer-bb2 ul{ list-style:none; padding-left:0px;}
 .footer-bb2 ul li{}
 .footer-bb2 ul li a{ color:#666; font-size:14px;}
-.newsletter-input{ background:#e6e8eb; border-radius:20px !important;}
-.subs{ width: 100%;color: #000;background: #fd7f4a;margin-top: 10px;border-radius: 20px;}
+.newsletter-input {	background: #e6e8eb;height: calc(2em + 0.75rem + 2px);}
+.subs{ height: calc(2em + 0.75rem + 2px);}
 .login-container h2{ text-align:center; margin:30px 0px; font-size:24px; font-weight:lighter;}
 .login-container h4{ font-size:16px; font-weight:700;}
 .tabsContainer .nav-pills .nav-link{ font-size:16px; color:#04243b; padding: 7px 26px;}
@@ -326,28 +343,21 @@ margin-right: 0.5rem;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 }
-.menu--shylock .menu__link::after {
-	background: #FDA30E;
-}
-.menu--shylock .active .menu__link::after, .menu--shylock .active .menu__link::before {
-	-webkit-transform: scale3d(1, 1, 1);
-	transform: scale3d(1, 1, 1);
-}
-.menu--shylock .menu__link::before, .menu--shylock .menu__link::after {
-	content: '';
+.menu--shylock .menu__item:hover .menu__link::after, .menu--shylock .menu__item.active .menu__link::after {
 	position: absolute;
-	bottom: 0px;
-	left: 0;
+	content: '';
 	width: 100%;
-	height: 5px;
-	-webkit-transform: scale3d(0, 1, 1);
-	transform: scale3d(0, 1, 1);
-	-webkit-transform-origin: center left;
-	transform-origin: center left;
-	-webkit-transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
-	transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+	bottom: 0px;
+	height: 4px;
+	background-color: var(--edu-primary);
+	left: 0;
 }
-
+.menu--shylock .menu__link::after {
+	position: absolute;
+	content: '';
+	width: 0;
+	transition: all .5s ease-in-out;
+}
 
 .State-dropdown {
 	text-align: left;
@@ -391,4 +401,18 @@ margin-right: 0.5rem;
 	width: 100%;
 	margin-top: 0;
 }
+.header-right .btn {
+	min-width: 100px;
+}
+.header-serach {
+	background-color: #e6e8eb;
+	border-radius: 50px;
+	overflow: hidden;
+	padding: 5px 5px;
+}
+.header-serach .form-control {
+	border: 0;
+	background-color: transparent;
+}
+.header-serach .btn{ width: 100px;}
 /*Navigation End*/
