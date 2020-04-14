@@ -14,7 +14,7 @@ body {
 	box-shadow: none;
 }
 .navbar-toggler {
-	margin-top: 1rem;
+	margin-top: 0.75rem;
 }
 .navbar-toggler > i{
 	color:var(--edu-primary);
@@ -415,4 +415,63 @@ margin-right: 0.5rem;
 	background-color: transparent;
 }
 .header-serach .btn{ width: 100px;}
+@media (min-width: 768px) and (max-width: 868px) { 
+.header-serach .form-control {
+	width: 165px;
+}
+}
+@media  (max-width: 768px) { 
+	.header-serach {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+	  .header-serach .form-control {
+		width: 70%;
+	  }
+	  .header-serach .btn {
+		width: 30%;
+	  }
+	  .header-middle {
+		margin: 1rem 0;
+	  }
+
+	  .nav-top {
+		margin-bottom: 1rem;
+	}
+	
+.ban-top {
+	position: relative;
+  }
+  .top_nav_right {
+	position: absolute;
+	right: 15px;
+	top: 0;
+}
+
+  .navbar.navbar-default {
+	float: none;
+	padding-bottom: 13px;
+}
+.navbar-collapse {
+	margin-top: 1.5rem;
+}
+.navbar-nav > li {
+	margin: 0;
+}
+.navbar-nav .nav-link {
+	text-align: center;
+}
+	}
+@media (min-width: 320px) and (max-width: 576px) { 
+	.header-serach {padding: 0 10px;}
+	  .order-xs-0 {order: 0;}
+	  .order-xs-1 {order: 1;}
+	  .order-xs-2 {order: 2;}
+	  .header-left {text-align: center;}
+	.header-right {margin-bottom: 1rem;}
+	.header-right .d-flex {justify-content: center;}
+	.nav-top .row > div {text-align: center;}
+ }
 /*Navigation End*/
