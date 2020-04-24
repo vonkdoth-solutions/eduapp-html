@@ -264,16 +264,9 @@ box-shadow: -1px 10px 5px -11px rgba(0,0,0,0.75);}
 .form-control.lock{ background:url(../images/lock.png) no-repeat 5px center; padding-left:27px;}
 .form-control.full-name, .form-control.mail-icon, .form-control.lock{ height:41px; borde-color:#8a92a3;}
 .benefits-container{ background:url(../images/Slide-125.jpg) no-repeat; background-size:cover;}
-.benefit-bb1{ width:70%; margin:0% auto; padding:1.5% 0px; }
+.benefit-bb1{  padding-top:2rem; padding-bottom:2rem; }
 .benefit-bb2{  background:rgba(255,255,255,0.6); padding:8px 6px; border-radius:5px; text-align:center;}
-.benefit-bb2 p{ margin:0px; color:#fd7f4a; font-size:14px;}
-.benefit-bb2 h6{ font-size:16px; color:#fd7f4a; font-weight:700; margin-bottom:0px;}
-.benefit-bb1 h5{ margin-top:2%;}
-.benefit-bb1 h2{     font-size: 6vh;
-    font-weight: 700;
-    margin-top: 2%;
-    margin-bottom:2%;
-}
+
 .last-btn{ margin-bottom:0%;}
 /* cus styles */
 
