@@ -1,0 +1,1424 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+     <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://kit.fontawesome.com/8b6e3a52ac.js" crossorigin="anonymous"></script>
+    <link  rel="stylesheet" href="css/select2.min.css">
+<script src="js/select2.min.js"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+              <a class="navbar-brand mt-0 pt-0" href="#"><img src="images/logo.png" width="169px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                   
+                </ul>
+                <form class="form-inline my-2 my-md-0">
+                    
+                </form>
+                 <ul class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle p-0" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img src="images/about-us.jpg" class="rounded mt-1 " width="29px" height="29px">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown07">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+         <nav aria-label="breadcrumb \" class="d-none d-sm-none d-md-block">
+                <ol class="breadcrumb white lighten-4 navbar-light bg-light mt-3">
+                    <li class=""><a class="text-success" href="sa_addcountry.html">Dashboard</a></li>
+                   
+                    
+                </ol>
+            </nav>
+        <!-- Countries List -->
+        <section class="mt-2 mb-5 table-section">
+            <div class="card">
+                <div class="card-header d-flex">
+                    <div class="feed-header-title">
+                       <a class="text-dark" href="sad_countries.html"> <h4 class="card-title">Countries Full List</h4></a>
+                     </div>
+                     <div class="ml-auto">
+                       <a href="sa_addcountry.html"> <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add Country</button></a>
+                    </div>
+
+                </div>
+                <div class="card-body">
+                     <div class="col-12 text-center ">
+                    <a class="text-dark text-nowrap" href="sa_addcounty.html"><i class="fas fa-plus"></i><b>Add County </b></a>&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <a class="text-dark" href="sa_addcity.html"><i class="fas fa-plus"></i><b>Add City</b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="text-dark" href="sa_addcountry.html"><i class="fas fa-plus"></i><b>Add Country</b></a>
+                </div>
+                    <div class="table-overflow">
+            <table class="table  table-hover">
+                <thead>
+                    <tr>
+                       
+                        <th scope="col">Country Names</th>
+                       
+                        <th scope="col" class="text-right">
+                            <div class="text-nowrap">Edit - View - Delete</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td>Mark</td>
+                       
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Mark</td>
+                        
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                   
+                        <td>Mark</td>
+                        
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+        </section>
+        <!-- Countries List End -->
+        <!-- State List -->
+        <section class="my-5 table-section">
+            <div class="card">
+                <div class="card-header d-flex">
+                    <div class="feed-header-title">
+                       <a class="text-dark" href="sad_states.html"> <h4 class="card-title">States Full List</h4></a>
+                     </div>
+                     <div class="ml-auto">
+                       <a href="sa_addstate.html"> <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add State</button></a>
+                    </div>
+
+                </div>
+                <div class="card-body">
+                    <!-- <div class="col-12 text-center ">
+                    <a class="text-dark text-nowrap" href="sa_addcounty.html"><i class="fas fa-plus"></i><b>Add County &nbsp;&nbsp;&nbsp;&nbsp; </b></a>
+                    <a class="text-dark" href="sa_addcity.html"><i class="fas fa-plus"></i><b>Add City&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+                    <a class="text-dark" href="sa_addcountry.html"><i class="fas fa-plus"></i><b>Add Country</b></a>
+                </div>-->
+                    <div class="table-overflow">
+            <table class="table  table-hover">
+                <thead>
+                    <tr>
+                       
+                        <th scope="col">States Names</th>
+                       
+                        <th scope="col" class="text-right">
+                            <div class="text-nowrap">Edit - View - Delete</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                        <td>Mark</td>
+                       
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Mark</td>
+                        
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Mark</td>
+                        
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+        </section>
+        <!-- state List End -->
+        <!-- Counties List -->
+        <section class="my-5 table-section">
+            <div class="card">
+                <div class="card-header d-flex">
+                    <div class="feed-header-title">
+                      <a class="text-dark" href="sad_counties.html">  <h4 class="card-title">Counties Full List</h4></a>
+                     </div>
+                     <div class="ml-auto">
+                        <a href="sa_addcounty.html"><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add Counties</button></a>
+                    </div>
+
+                </div>
+                <div class="card-body">
+                    <!-- <div class="col-12 text-center ">
+                    <a class="text-dark text-nowrap" href="sa_addcounty.html"><i class="fas fa-plus"></i><b>Add County &nbsp;&nbsp;&nbsp;&nbsp; </b></a>
+                    <a class="text-dark" href="sa_addcity.html"><i class="fas fa-plus"></i><b>Add City&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+                    <a class="text-dark" href="sa_addcountry.html"><i class="fas fa-plus"></i><b>Add Country</b></a>
+                </div>-->
+                    <div class="table-overflow">
+            <table class="table  table-hover">
+                <thead>
+                    <tr>
+                      
+                        <th scope="col">Counties Names</th>
+                       
+                        <th scope="col" class="text-right">
+                            <div class="text-nowrap">Edit - View - Delete</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td>Mark</td>
+                       
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Mark</td>
+                        
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                      
+                        <td>Mark</td>
+                        
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+        </section>
+        <!-- Counties List End -->
+        <!-- Schools List -->
+        <section class="my-5 table-section">
+            <div class="card">
+                <div class="card-header d-flex">
+                    <div class="feed-header-title">
+                       <a class="text-dark" href="sad_schools.html"> <h4 class="card-title">Schools Full List</h4></a>
+                     </div>
+                     <div class="ml-auto">
+                      <a href="sa_addschool.html">  <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Add Schools</button></a>
+                    </div>
+
+                </div>
+                <div class="card-body">
+                    <div class="table-overflow">
+                    <table class="table  table-hover">
+                <thead>
+                    <tr>
+                    
+                        <th scope="col">School Name</th>
+                        <th scope="col">State</th>
+                        <th scope="col">Country</th>
+                        <th scope="col">School Address</th>
+                        <th scope="col">Admin</th>
+                        <th scope="col" class="text-right">
+                            <div class="text-nowrap">Edit - View - Delete</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                        <td>The Indian School</td>
+                         <td>State</td>
+                        <td>India</td>
+                        <td>
+                            <p>
+                                Josip Broz Tito Marg, Sector 1, Sadiq Nagar, New Delhi, Delhi
+                            </p>
+                        </td>
+                        <td>Admin Name</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>The Indian School</td>
+                         <td>State</td>
+                        <td>India</td>
+                        <td>
+                            <p>
+                                Josip Broz Tito Marg, Sector 1, Sadiq Nagar, New Delhi, Delhi
+                            </p>
+                        </td>
+                        <td>Admin Name</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                      
+                        <td>The Indian School</td>
+                        
+                        <td>State</td>
+                        <td>India</td>
+                        <td>
+                            <p>
+                                Josip Broz Tito Marg, Sector 1, Sadiq Nagar, New Delhi, Delhi
+                            </p>
+                        </td>
+                        <td>Admin Name</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+</div>
+        </div>
+    </div>
+
+        </section>
+        <!-- Schools List End -->
+        <!-- Users List -->
+        <section class="my-5 table-section">
+		
+		<div class="card">
+            
+			
+			
+			<div class="card-header d-flex">
+                    <div class="feed-header-title">
+                      <a class="text-dark" href="sad_users.html">  <h4 class="card-title">Users Full List</h4></a>
+                     </div>
+                     <div class="ml-auto">
+                       <a href="sa_adduser.html"> <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus" aria-hidden="true"></i> Add Users</button></a>
+                    </div>
+
+                </div>
+				
+				
+		<div class="card-body">
+		  <div class="table-overflow">
+            <table class="table  table-hover">
+                <thead>
+                    <tr>
+                    
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Email </th>
+                        <th scope="col">Address</th>
+                        <th scope="col">User Type</th>
+                        <th scope="col" class="text-right">
+                            <div class="text-nowrap">Edit - View - Delete</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                        <td>The Indian School</td>
+                        <td>India</td>
+                       <td>India@gmail.com</td>
+                        <td>
+                            <p>Josip Broz Tito Marg, Sector 1, Sadiq Nagar, New Delhi, Delhi</p>
+                        </td>
+                        <td>
+                            One
+                        </td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>The Indian School</td>
+                        <td>India</td>
+                        <td>India@gmail.com</td>
+                        <td>
+                            <p>Josip Broz Tito Marg, Sector 1, Sadiq Nagar, New Delhi, Delhi</p>
+                        </td>
+                        <td>
+                            One
+                        </td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>The Indian School</td>
+                        <td>India</td>
+                      <td>India@gmail.com</td>
+                        <td>
+                            <p>Josip Broz Tito Marg, Sector 1, Sadiq Nagar, New Delhi, Delhi</p>
+                        </td>
+                        <td>
+                            One
+                        </td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+			
+			</div>
+			</div>
+			
+			</div>
+        </section>
+        <!-- Users List End -->
+        <!-- Grade List -->
+        <section class="my-5 table-section">
+		
+		<div class="card">
+			<div class="card-header d-flex">
+                    <div class="feed-header-title">
+                        <a class="text-dark" href="sad_grades.html"><h4 class="card-title">Grade Full List</h4></a>
+                     </div>
+                     <div class="ml-auto">
+                       <a href="sa_addgrade.html"> <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus" aria-hidden="true"></i> Add Grade</button></a>
+                    </div>
+
+                </div>
+			
+			
+			
+			<div class="card-body">
+		  <div class="table-overflow">
+			
+            <table class="table  table-hover">
+                <thead>
+                    <tr>
+                    
+                        <th scope="col">Grade Name</th>
+                        <th scope="col" class="text-right">
+                            <div class="text-nowrap">Edit - View - Delete</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                        <td>Grade Name 1</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Grade Name 1</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Grade Name 1</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+			
+			</div>
+			</div>
+			
+		 </div>
+        </section>
+        <!-- Grade List End -->
+        <!-- Subject List -->
+        <section class="my-5 table-section">
+        
+        <div class="card">
+            <div class="card-header d-flex">
+                    <div class="feed-header-title">
+                        <a class="text-dark" href="sad_Subjects.html"><h4 class="card-title">Subject Full List</h4></a>
+                     </div>
+                     <div class="ml-auto">
+                       <a href="sa_addsubject.html"> <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus" aria-hidden="true"></i> Add Subject</button></a>
+                    </div>
+
+                </div>
+            
+            
+            
+            <div class="card-body">
+          <div class="table-overflow">
+            
+            <table class="table  table-hover">
+                <thead>
+                    <tr>
+                    
+                        <th scope="col">Subject Name</th>
+                        <th scope="col" class="text-right">
+                            <div class="text-nowrap">Edit - View - Delete</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                        <td>Subject Name 1</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Subject Name 1</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Subject Name 1</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            </div>
+            </div>
+            
+         </div>
+        </section>
+        <!-- Subject List End -->
+        
+
+        <!-- Courses List -->
+        <section class="my-5 table-section">
+           
+			<div class="card">
+			
+			
+			<div class="card-header d-flex">
+                    <div class="feed-header-title">
+                       <a class="text-dark" href="sad_courses.html"> <h4 class="card-title">Courses Full List</h4></a>
+                     </div>
+                     <div class="ml-auto">
+                       <a href="sa_addcourse.html"> <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus" aria-hidden="true"></i> Add Courses</button></a>
+                    </div>
+
+                </div>
+			
+			
+			<div class="card-body">
+		  <div class="table-overflow">
+			
+			
+            <table class="table  table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">Courses Name</th>
+                        <th scope="col">Subject Name</th>
+                        <th scope="col">Tag To Grade</th>
+                        <th scope="col">Copy</th>
+                        <th scope="col">Assign To School/Dist</th>
+                        <th scope="col" class="text-right">
+                            <div class="text-nowrap">Edit - View - Delete</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                        <td>Courses Name 1</td>
+                        <td>Subject Name 1</td>
+                        <td><a class="text-dark" href="sa_tagcoursetograde.html"> Grade 8</a></td>
+            <td>&nbsp;<a href="sa_createcopycourse.html"><i class="fa fa-clone" aria-hidden="true"></i></a></td>
+                            <td><a class="" href="sa_asigncoursetoschool.html">Tag School</a></td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Courses Name 1</td>
+                        <td>Subject Name 1</td>
+                     <td><a class="" href="sa_tagcoursetograde.html">Tag</a></td>
+                         <td>&nbsp;<a href="sa_createcopycourse.html"><i class="fa fa-clone" aria-hidden="true"></i></a></td>
+                            <td><a class="text-dark" href=""> Indian School</a></td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Courses Name 1</td>
+                        <td>Subject Name 1</td>
+                       <td><a class="text-dark" href=""> Grade 6</a></td>
+                         <td>&nbsp;<a href="sa_createcopycourse.html"><i class="fa fa-clone" aria-hidden="true"></i></a></td>
+                             <td><a class="text-dark" href=""> School Of Learning</a></td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+			
+			</div>
+			</div>
+			</div>
+        </section>
+        <!-- Courses List End -->
+        <!-- Topic  List -->
+        <section class="my-5 table-section">
+
+			<div class="card">
+			<div class="card-header d-flex">
+                    <div class="feed-header-title">
+                       <a class="text-dark" href="sad_topics.html"> <h4 class="card-title">Topic Full List</h4></a>
+                     </div>
+                     <div class="ml-auto">
+                        <a href="sa_addtopics.html"><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus" aria-hidden="true"></i> Add Topic</button></a>
+                    </div>
+
+                </div>
+			
+			
+			
+			
+			<div class="card-body">
+		  <div class="table-overflow">
+			
+            <table class="table  table-hover">
+                <thead>
+                    <tr>
+                    
+                        <th scope="col">Topic Name</th>
+                        <th scope="col">Courses Name</th>
+                        <th scope="col">Subject Name</th>
+                        <th scope="col">Grade</th>
+                       
+                        <th scope="col" class="text-right">
+                            <div class="text-nowrap">Edit - View - Delete</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                        <td>Topic Name 1</td>
+                        <td>Courses Name 1</td>
+                        <td>Subject Name</td>
+                        <td>Grade 1</td>
+                        
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Topic Name 1</td>
+                        <td>Courses Name 1</td>
+                        <td>Subject Name</td>
+                        <td>Grade 1</td>
+                       
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Topic Name 1</td>
+                        <td>Courses Name 1</td>
+                        <td>Subject Name</td>
+                        <td>Grade 1</td>
+                      
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+			
+			</div>
+			</div>
+			</div>
+			
+        </section>
+        <!-- Topic list End -->
+         <!-- Topic  List -->
+        <section class="my-5 table-section">
+
+            <div class="card">
+            <div class="card-header d-flex">
+                    <div class="feed-header-title">
+                    <a class="text-dark" href="sad_learningresources.html"> <h4 class="card-title">Learning Resources</h4></a>
+                     </div>
+                     <div class="ml-auto">
+                    <a href="sa_addlearningresource.html"> <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus" aria-hidden="true"></i> Add Resources</button></a>
+                    </div>
+
+                </div>
+            
+            
+            
+            
+            <div class="card-body">
+          <div class="table-overflow">
+            
+            <table class="table  table-hover">
+                <thead>
+                    <tr>
+                    
+                        <th scope="col">Resource Name</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">view</th>
+                        <th scope="col">Date  Added</th>
+                       
+                        <th scope="col" class="text-right">
+                            <div class="text-nowrap">Edit - View - Delete</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                        <td>Resource 1</td>
+                      <td><i class="far fa-file-pdf fa-2x "></i></td>
+                        <td><a href=""><b>view</b></a></td>
+                        <td>28/04/2020</td>
+                        
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Resource 2</td>
+                        <td><i class="fas fa-file-word fa-2x" style="color: #0078d7"></i></td>
+                         <td><a href=""><b>view</b></a></td>
+                         <td>28/04/2020</td>
+                       
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Resource 3</td>
+                       <td><i class="fa fa-youtube-play fa-2x" style="color: #c4302b " ></i></td>
+                        <td><a href=""><b>view</b></a></td>
+                        <td>28/04/2020</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            </div>
+            </div>
+            </div>
+            
+        </section>
+        <!-- Topic list End -->
+         <!-- Question category-->
+        <section class="my-5 table-section">
+
+            <div class="card">
+            <div class="card-header d-flex">
+                    <div class="feed-header-title">
+                       <a class="text-dark" href="sad_questioncategory.html"> <h4 class="card-title">Questions Category</h4></a>
+                     </div>
+                     <div class="ml-auto">
+                        <a href="sa_addquestioncategory.html"><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus" aria-hidden="true"></i> Add Question category</button></a>
+                    </div>
+
+                </div>
+            
+            
+            
+            
+            <div class="card-body">
+          <div class="table-overflow">
+            
+            <table class="table  table-hover">
+                <thead>
+                    <tr>
+                    
+                       
+                        <th scope="col">Question Category</th>
+                        <th scope="col text-center" >Type</th>
+                        <th scope="col">View</th>
+
+                        <th scope="col">Date Added</th>
+                       
+                        <th scope="col" class="text-right">
+                            <div class="text-nowrap">Edit - View - Delete</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                        <td>Category 1</td>
+                      <td>Multiple Choice</td>
+                        <td><a href=""><b>view</b></a></td>
+                        <td>28/04/2020</td>
+                        
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Category 2</td>
+                        <td>Multiple Choice</td>
+                         <td><a href=""><b>view</b></a></td>
+                         <td>28/04/2020</td>
+                       
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Category 3</td>
+                       <td>Multiple Choice</td>
+                        <td><a href=""><b>view</b></a></td>
+                        <td>28/04/2020</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            </div>
+            </div>
+            </div>
+            
+        </section>
+        <!-- Topic list End -->
+         <!-- Question category-->
+        <section class="my-5 table-section">
+
+            <div class="card">
+            <div class="card-header d-flex">
+                    <div class="feed-header-title">
+                       <a class="text-dark" href="sad_questioncategory.html"> <h4 class="card-title">Questions List</h4></a>
+                     </div>
+                     <div class="ml-auto">
+                        <a href="sa_addquestioncategory.html"><button type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus" aria-hidden="true"></i> Add Question </button></a>
+                    </div>
+
+                </div>
+            
+            
+            
+            
+            <div class="card-body">
+          <div class="table-overflow">
+            
+            <table class="table  table-hover">
+                <thead>
+                    <tr>
+                    
+                       
+                        <th scope="col">Question Title</th>
+                        <th scope="col text-center" >Type</th>
+                          <th scope="col">Question Category</th>
+
+                      
+
+                        <th scope="col">Date Added</th>
+                       
+                        <th scope="col" class="text-right">
+                            <div class="text-nowrap">Edit - View - Delete</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                      <td>Title 3</td>
+                       <td>Multiple Choice</td>
+                        <td>category</td>
+                        
+                        <td>28/04/2020</td>
+                        
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Title 3</td>
+                       <td>Multiple Choice</td>
+                        <td>category</td>
+                        
+                        <td>28/04/2020</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Title 3</td>
+                       <td>Multiple Choice</td>
+                        <td>category</td>
+                        
+                        <td>28/04/2020</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            </div>
+            </div>
+            </div>
+            
+        </section>
+        <!-- Topic list End -->
+          <!-- Question category-->
+        <section class="my-5 table-section">
+
+            <div class="card">
+            <div class="card-header d-flex">
+                    <div class="feed-header-title">
+                       <a class="text-dark" href="sad_assesments.html"> <h4 class="card-title">Assessments</h4></a>
+                     </div>
+                     <div class="ml-auto">
+                        <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus" aria-hidden="true"></i> Assessments</button>
+                    </div>
+
+                </div>
+            
+            
+            
+            
+            <div class="card-body">
+          <div class="table-overflow">
+            
+            <table class="table  table-hover">
+                <thead>
+                    <tr>
+                    
+                       
+                        <th scope="col">Title</th>
+                        <th scope="col text-center" >Type</th>
+                        <th scope="col">View</th>
+                           <th scope="col">Course</th>
+
+
+                        <th scope="col">Date Added</th>
+                       
+                        <th scope="col" class="text-right">
+                            <div class="text-nowrap">Edit - View - Delete</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                        <td>Assessments 1</td>
+                      <td>Multiple Choice</td>
+                        <td><a href=""><b>view</b></a></td>
+                           <td scope="col">Course 1</td>
+
+                        <td>28/04/2020</td>
+                        
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Assessments 2</td>
+                        <td>Multiple Choice</td>
+                         <td><a href=""><b>view</b></a></td>
+                           <td scope="col">Course 2</td>
+
+                         <td>28/04/2020</td>
+                       
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Assessments 3</td>
+                       <td>Multiple Choice</td>
+                        <td><a href=""><b>view</b></a></td>
+                          <td scope="col">Course 3</td>
+
+                        <td>28/04/2020</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            </div>
+            </div>
+            </div>
+            
+        </section>
+        <!-- Topic list End -->
+        <!-- Content  List -->
+        <section class="my-5 table-section">
+           
+			
+		
+
+       <div class="card">
+	   
+	   <div class="card-header d-flex">
+                    <div class="feed-header-title">
+                       <a class="text-dark" href="sad_content.html"> <h4 class="card-title">Content</h4></a>
+                     </div>
+                     <div class="ml-auto">
+                       <a href="sa_addcontent2.html"> <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus" aria-hidden="true"></i> Add Content</button></a>
+                    </div>
+
+                </div>
+
+
+
+		
+			
+			
+	  <div class="card-body">
+		  <div class="table-overflow">		
+            <table class="table  table-hover">
+                <thead>
+                    <tr>
+                    
+                        <th scope="col">Topic</th>
+                        <th scope="col">Document</th>
+                        <th scope="col">Concept Questions</th>
+                        <th scope="col">Video</th>
+                        <th scope="col">Date Added</th>
+                        <th scope="col" class="text-right">
+                            <div class="text-nowrap">Edit - View - Delete</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       
+                        <td>Topic Name</td>
+                        <td><a class="text-dark" href=""> Link</a></td>
+                        <td>
+                            Concept
+                        </td>
+                        <td>
+                           <i class="fa fa-play" aria-hidden="true"></i>
+
+                        </td>
+                       <td>22/02/2020</td>
+
+
+
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Topic Name</td>
+                        <td><a class="text-dark" href=""> Link</a></td>
+                        <td>
+                            Concept
+                        </td>
+                        <td>
+                          <i class="fa fa-play" aria-hidden="true"></i>
+
+                        </td>
+                       <td>22/02/2020</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Topic Name</td>
+                        <td><a class="text-dark" href=""> Link</a></td>
+                        <td>
+                            Concept
+                        </td>
+                        <td >
+                           <i class="fa fa-play" aria-hidden="true"></i>
+
+                        </td>
+                        <td>22/02/2020</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+			
+			</div>
+			</div>
+			</div>
+			
+        </section>
+        <!-- Content list End -->
+         <!-- Content  List -->
+        <section class="my-5 table-section">
+           
+            
+        
+
+       <div class="card">
+       
+       <div class="card-header d-flex">
+                    <div class="feed-header-title">
+                       <a class="text-dark" href=""> <h4 class="card-title">Inbox</h4></a>
+                     </div>
+                     <div class="ml-auto">
+                        <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus" aria-hidden="true"></i> Compose Message</button>
+                    </div>
+
+                </div>
+
+
+
+        
+            
+            
+      <div class="card-body">
+         <table class="table table-condensed table-hover">
+  <thead>
+    <tr>
+      
+             <div class="col-12 text-center">
+                    <a class="text-dark text-nowrap" href=""><i class="fas fa-plus"></i><b>New Chat &nbsp;&nbsp;&nbsp;&nbsp; </b></a>
+                    <a class="text-dark" href=""><i class="fas fa-plus"></i><b>New Email&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+                    <a class="text-dark" href=""><i class="fas fa-plus"></i><b>New Announcement</b></a>
+                </div>
+        
+      <th class="span1"></th>
+      <th class="span2"></th>
+      <th class="span2"></th>
+      <th class="span9"></th>
+      <th class="span2"></th>
+       <th class="span2"></th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="checkbox"> </td>
+      <td><strong>John Doe</strong></td>
+      <td><span class="label pull-right">Notifications</span></td>
+      <td><strong>Message body goes here</strong></td>
+      <td><strong>11:23 PM</strong></td>
+      <td class="text-right"><a class="text-dark mt-2" href=""><i class="far fa-star  "></i></a><button class="btn btn-link">&nbsp;<i class="fas fa-caret-square-down text-success"></i></button> <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button> </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"> </td>
+      <td>John Doe</td>
+      <td><span class="label pull-right">Notifications</span></td>
+      <td>Message body goes here</td>
+      <td>Sept4</td>
+          <td class="text-right"><a class="text-dark mt-2" href=""><i class="far fa-star  "></i></a><button class="btn btn-link">&nbsp;<i class="fas fa-caret-square-down text-success"></i></button> <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button> </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"> </td>
+      <td><strong>John Doe</strong></td>
+      <td><span class="label pull-right">Notifications</span></td>
+      <td><strong>Message body goes here</strong></td>
+      <td><strong>Sept3</strong></td>
+          <td class="text-right"><a class="text-dark mt-2" href=""><i class="far fa-star  "></i></a><button class="btn btn-link">&nbsp;<i class="fas fa-caret-square-down text-success"></i></button> <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button> </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"> </td>
+      <td><strong>John Doe</strong></td>
+      <td><span class="label pull-right">Notifications</span></td>
+      <td><strong>Message body goes here</strong></td>
+      <td><strong>Sept3</strong></td>
+          <td class="text-right"><a class="text-dark mt-2" href=""><i class="far fa-star  "></i></a><button class="btn btn-link">&nbsp;<i class="fas fa-caret-square-down text-success"></i></button> <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button> </td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+            </div>
+            
+        </section>
+        <!-- Content list End -->
+    </div>
+</div>
+</main>
+<footer class="page-footer font-small navbar-light bg-light  mt-4">
+
+        <!-- Footer Links -->
+       
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 - 2021 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> EDU APP | VONKDOTH PRODUCT</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
