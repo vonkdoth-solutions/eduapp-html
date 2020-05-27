@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/8b6e3a52ac.js" crossorigin="anonymous"></script>
+    <link  rel="stylesheet" href="css/select2.min.css">
+<script src="js/select2.min.js"></script>
+    <title>Add topics</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+              <a class="navbar-brand mt-0 pt-0" href="#"><img src="images/logo.png" width="169px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                   
+                </ul>
+              
+                
+            </div>
+        </div>
+    </nav>
+     <div class="container">
+
+        <section>
+             <nav aria-label="breadcrumb \" class="d-none d-sm-none d-md-block">
+                <ol class="breadcrumb white lighten-4 navbar-light bg-light mt-3">
+                    <li class=""><a class="text-success" href="sa_addcountry.html">Dashboard</a><i class="fas fa-angle-right mx-2"
+                            aria-hidden="true"></i></li>
+                    <li class=""><a class="text-grey" href="sa_addschool.html">Add Topics</a></li>
+                    
+                </ol>
+            </nav>
+          <!--  
+               <div class="alert alert-success">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close"> ×</a>
+          successfull
+         </div>
+          <div class="alert alert-danger">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close"> ×</a>
+          Error
+         </div>
+            <div class="alert alert-info">
+           <a href="#" class="close" data-dismiss="alert" aria-label="close"> ×</a>
+          Info
+         </div>
+          -->  
+                <div class="sedsec border px-3">
+                    <div class="row  text-black">
+                        <div class="col-12  mytabs pt-3 pb-1 text-center border-bottom text-black">
+                            <h5 class="h5 text-black">
+                               Add Topics
+                               </h5>
+                        </div>
+                        <div class="col-sm-12 col-md-2 col-lg-2 my-3 d-none d-md-block">
+                            
+                        </div>
+                        <div class="col-sm-6 col-md-8 col-lg-8 my-3 ">
+                            <div class=" p-3 bg-white rounded-top">
+                                <!-- Default form register -->
+                                <form class="text-center " action="#!">
+                                        <div class="row text-left">
+                                        
+                                                <div class="col-12 col-sm-3 col-md-3 mb-3">
+                                                   
+                                                </div>
+                                               <!-- <div class="col-12 col-sm-4 col-md-3 input-group mb-3">
+                                                     <select class="form-control select2">
+               <option>Select Grade</option> 
+               <option> Afghanistan</option> 
+               <option>Argentina</option> 
+               <option>Bahrain</option> 
+               <option>Côte d'Ivoire</option> 
+               <option> Denmark</option>
+              
+               
+            </select>
+                                                    
+                                                </div>-->
+                                                <div class="col-12 col-sm-6 col-md-4 mb-3  d-none d-sm-none d-md-block">
+                                                     <span class="form-text   text-muted pr-2 font-weight-bold">Course:Maths </span>
+                                                    
+                                                </div>
+                                                 <div class="col-12 col-sm-6 col-md-3  mb-3 d-none d-sm-none d-md-block">
+                                                     <select class="form-control select2">
+               <option value="0">Select levels</option> 
+               <option value="1">One</option> 
+               <option value="2">Two</option> 
+               <option value="3">Three</option> 
+               <option value="4">Four</option> 
+               <option value="5">Five</option> 
+            </select>
+                                                    
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-2 pt-1 mb-3 d-none d-sm-none d-md-block">
+                                                      <button type="button" class="btn btn-warning btn-sm "><i class="fas fa-plus-alt"></i> Create</button>
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-2 pt-1 mb-3 d-none d-sm-none d-md-block">
+                                                      <button type="button" class="btn btn-primary btn-sm "><i class="fas fa-trash-alt"></i> Delete</button>        
+                                                    
+                                                </div>
+                                                <div class=" d-block d-sm-none border-bottom">
+                      
+
+                        <div class="row ">
+                           <div class="col-12 text-center mb-2 pl-0">
+                              <span class="form-text   text-muted  font-weight-bold">Course:Maths </span>
+                            </div>
+
+                            <div class="col-6 text-center mb-2 pl-0">
+                            <select class="form-control select2">
+               <option>Select levels</option> 
+               <option>Car</option> 
+               <option>Bike</option> 
+               <option>Scooter</option> 
+               <option>Cycle</option> 
+               <option>Horse</option> 
+            </select>
+                            </div>
+                            <div class="col-6 mb-2 pt-1 text-center pl-0">
+                               
+                                                      <button type="button" class="btn btn-primary btn-sm "><i class="fas fa-trash-alt"></i> Delete</button>
+                               
+                            </div>
+                             <div class="col-12  border-top">
+                                <i class="fas fa-plus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1">Topic 1</label>
+                                                </div>
+
+                               
+                             </div>
+                               <div class="col-12  mt-1">
+                                  <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                 <div class="col-12  mt-1">
+                                <i class="fas fa-plus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1">Topic 1.1</label>
+                                                </div>
+
+                               
+                             </div>
+                               <div class="col-12  mt-1">
+                                  <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                 <div class="col-12  mt-1">
+                                <i class="fas fa-plus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1">Topic 1.1.1</label>
+                                                </div>
+
+                               
+                             </div>
+                               <div class="col-12  mt-1">
+                                  <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                 <div class="col-12  mt-1">
+                                <i class="fas fa-plus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1">Topic 1.1.2</label>
+                                                </div>
+
+                               
+                             </div>
+                               <div class="col-12  mt-1">
+                                  <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                 <div class="col-12  mt-1">
+                                <i class="fas fa-plus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1">Topic 1.2</label>
+                                                </div>
+
+                               
+                             </div>
+                               <div class="col-12  mt-1">
+                                  <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                 <div class="col-12  mt-1">
+                                <i class="fas fa-plus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1">Topic 1.2.1</label>
+                                                </div>
+
+                               
+                             </div>
+                               <div class="col-12  mt-1">
+                                  <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+
+                                 <div class="col-12  mt-1">
+                                <i class="fas fa-plus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1">Topic 1.2.2</label>
+                                                </div>
+
+                               
+                             </div>
+                               <div class="col-12  mt-1">
+                                  <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                 <div class="col-12  mt-1">
+                                <i class="fas fa-plus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1">Topic 1.3</label>
+                                                </div>
+
+                               
+                             </div>
+                               <div class="col-12  mt-1">
+                                  <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                 <div class="col-12  mt-1">
+                                <i class="fas fa-plus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1">Topic 1.4</label>
+                                                </div>
+
+                               
+                             </div>
+                               <div class="col-12  mt-1">
+                                  <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                </div> <div class="col-12  mt-1">
+                                <i class="fas fa-plus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1">Topic 1.5</label>
+                                                </div>
+
+                               
+                             </div>
+                               <div class="col-12  mt-1">
+                                  <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                 <div class="col-12  mt-1">
+                                <i class="fas fa-plus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1">Topic 1.6</label>
+                                                </div>
+
+                               
+                             </div>
+                               <div class="col-12  mt-1">
+                                  <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+
+
+
+                        </div>
+                        
+                    </div>
+
+                                                
+                                                
+                                                
+                                              <div class="col-12 col-sm-12 col-md-12 text-center border-bottom input-group mb-3 d-none d-sm-none d-md-block">
+                                              </div>
+                                              <div class="col-12 col-sm-4 col-md-3 mb-2">
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Upload <i class="fas fa-info-circle"></i> :</span>
+                                                </div>
+                                                <div class="col-12 col-sm-8 col-md-9 input-group mb-2">
+                                                    <input class="form-control  pt-1 p-1" id="imgUpload" name="imgUpload" accept="image/*" type="file">
+                                                </div>
+                                               <div class="col-12  col-sm-12 col-md-3 input-group mb-3 d-none d-sm-none d-md-block" id="course" >
+                                                <!-- Default inline 1-->
+                                           <i class="fas fa-plus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1">Topic 1</label>
+                                                </div>
+    
+                                                <!-- Default inline 2-->
+                                               
+                                            </div>
+
+                                                <div class="col-12 col-sm-12 col-md-9 input-group mb-3 d-none d-sm-none d-md-block">
+                                                  <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                                
+                                                   <div class="col-12  col-sm-12 col-md-3  mb-3 d-none d-sm-none d-md-block" id="course" >
+                                                <!-- Default inline 1-->&nbsp;&nbsp;&nbsp;&nbsp;
+                                           <i class="fas fa-plus"></i> &nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline2" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline2">Topic 1.1</label>
+                                                </div>
+    
+                                                <!-- Default inline 2-->
+                                               
+                                            </div>
+                                                <div class="col-12 col-sm-12 col-md-9 d-none d-sm-none d-md-block input-group mb-3">
+                                                  <input type="text" class="form-control" placeholder=" Divide Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                                
+ 
+                                                 <div class="col-12 col-sm-12 col-md-3 text-right d-none d-sm-none d-md-block mb-3">
+                                                    <i class="fas fa-plus"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline3" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline3">Topic 1.1.1</label>
+                                                </div>
+                                                </div>
+                                             <div class="col-12 col-sm-12 col-md-9 input-group mb-3 d-none d-sm-none d-md-block">
+                                                  <input type="text" class="form-control" placeholder=" Add Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                                 
+
+                                                  
+                                                 <div class="col-12 col-sm-12 col-md-3 text-right d-none d-sm-none d-md-block mb-3">
+                                                   <i class="fas fa-plus"></i>&nbsp;&nbsp; <div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline4" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline4">Topic 1.1.2</label>
+                                                </div>
+                                                </div>
+                                             <div class="col-12 col-sm-12 col-md-9 input-group mb-3 d-none d-sm-none d-md-block">
+                                                  <input type="text" class="form-control" placeholder="Subtract Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                                 
+
+                                                  
+                                                  <div class="col-12 col-sm-12 col-md-3 text-right d-none d-sm-none d-md-block mb-3">
+                                                    <i class="fas fa-plus"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline5" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline5">Topic 1.1.3</label>
+                                                </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-9 input-group mb-3 d-none d-sm-none d-md-block">
+                                                  <input type="text" class="form-control" placeholder=" Multiply Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                                
+                                                  <div class="col-12  col-sm-12 col-md-3  mb-3 d-none d-sm-none d-md-block" id="course" >
+                                                <!-- Default inline 1-->&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <i class="fas fa-plus"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline6" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline6">Topic 1.2</label>
+                                                </div>
+    
+                                                <!-- Default inline 2-->
+                                               
+                                            </div>
+                                                <div class="col-12 col-sm-12 col-md-9 input-group mb-3 d-none d-sm-none d-md-block">
+                                                  <input type="text" class="form-control" placeholder="Imaginary  Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                                 
+
+                                                  
+                                                 <div class="col-12  col-sm-12 col-md-3  mb-3 d-none d-sm-none d-md-block" id="course" >
+                                                <!-- Default inline 1-->&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <i class="fas fa-plus"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline7" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline7">Topic 1.3</label>
+                                                </div>
+    
+                                                <!-- Default inline 2-->
+                                               
+                                            </div>
+                                                <div class="col-12 col-sm-12 col-md-9 input-group mb-3 d-none d-sm-none d-md-block">
+                                                  <input type="text" class="form-control" placeholder="Natural Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                                 
+                                                 <div class="col-12  col-sm-12 col-md-3  mb-3 d-none d-sm-none d-md-block" id="course" >
+                                                <!-- Default inline 1-->&nbsp;&nbsp;&nbsp;&nbsp;
+                                           <i class="fas fa-plus"></i>&nbsp;&nbsp; <div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline8" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline8">Topic 1.4</label>
+                                                </div>
+
+    
+                                                <!-- Default inline 2-->
+                                               
+                                            </div>
+                                                <div class="col-12 col-sm-12 col-md-9 input-group mb-3 d-none d-sm-none d-md-block">
+                                                  <input type="text" class="form-control" placeholder="Rotational  Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                                 
+ <div class="col-12  col-sm-4 col-md-3 input-group mb-3 d-none d-sm-none d-md-block" id="course" >
+                                                <!-- Default inline 1-->
+                                          <i class="fas fa-plus"></i>  &nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline9" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline9">Topic 2</label>
+                                                </div>
+    
+                                                <!-- Default inline 2-->
+                                               
+                                            </div>
+                                                <div class="col-12 col-sm-12 col-md-9 input-group mb-3 d-none d-sm-none d-md-block">
+                                                  <input type="text" class="form-control" placeholder="Extended Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                              
+                                                </div></div>
+    
+                                                <!-- Default inline 2-->
+                                               
+                                            </div>
+                                                   
+                                               
+                                            </div>
+                                        
+                                        <hr>
+                                        <!-- Sign up button -->
+                                        <div class="text-center mb-3">
+                                         <a class="text-dark" href="sa_addcontent.html"><button type="button" class="btn btn-primary btn-md">Add Content</button></a>
+                                         <br>
+                                        </div>
+                                        
+    
+                                    </form>
+                                <!-- Default form register -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </section>
+        <!-- 2nd Section End -->
+        
+    </div>
+<script>
+    $('.select2').select2();
+</script>
+<footer class="page-footer font-small navbar-light bg-light  mt-4">
+
+        <!-- Footer Links -->
+       
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 - 2021 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> EDU APP | VONKDOTH PRODUCT</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

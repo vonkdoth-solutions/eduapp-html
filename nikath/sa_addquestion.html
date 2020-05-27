@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/mystyle.css">
-     <script src="js/jquery-3.4.1.slim.min.js"></script>
+     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="https://kit.fontawesome.com/8b6e3a52ac.js" crossorigin="anonymous"></script>
     <link  rel="stylesheet" href="css/select2.min.css">
 <script src="js/select2.min.js"></script>
@@ -112,7 +112,7 @@
                                                     <span class="form-text  text-muted pr-2 font-weight-bold">Question Text : </span>
                                                 </div>
                                                 <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
-                                                     <textarea class="form-control counted" name="message" placeholder="Type in your Question" rows="12" ></textarea>
+                                                     <textarea class="form-control counted" name="message" placeholder="Type in your Question" id="question" rows="12" ></textarea>
                                                 </div>
                                                 
                                                 
@@ -274,6 +274,21 @@
     <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-</body>
+    <script type="text/javascript" src="js/tinymce/plugins/asciimath/js/ASCIIMathMLwFallback.js"></script>
+    <script language="javascript" type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript">
+tinymce.init({
+    selector: "textarea",
+    plugins: [
+        "advlist autolink lists link image charmap print preview anchor",
+        "searchreplace visualblocks code fullscreen",
+        "insertdatetime media table paste",
+        "asciimath,asciisvg"
+    ],
+    menubar: '',
+    toolbar: 'asciimathcharmap asciisvg | bold italic underline strikethrough |  alignleft aligncenter alignright alignjustify | numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | fullscreen preview save print | insertfile image media pageembed template link anchor codesample | fontselect fontsizeselect formatselect ',
+    width: '1000px',
+});
+</script>
 
 </html>

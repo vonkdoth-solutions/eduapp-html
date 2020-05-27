@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/8b6e3a52ac.js" crossorigin="anonymous"></script>
+    <link  rel="stylesheet" href="css/select2.min.css">
+<script src="js/select2.min.js"></script>
+    <title>Add topics</title>
+    <style>
+    .mychange{position: absolute;}
+    .pl-7{padding-left: 5rem;}
+    </style>
+</head>
+<script>
+function saveTopic(level) {
+//alert(level);
+alert('topic_'+$('#topic_'+level).attr('topic_parent_id'));
+var parent_id = $('#topic_'+level).attr('topic_parent_id');
+if( parent_id!= 0) {
+var parent_value = $('#topic_'+parent_id).val();  
+if( parent_value=='' ){
+  alert('Please fill the parent topic first');
+  $('#topic'+parent_id).css('border-color', 'red');
+}  
+} else {
+var topic_value = $('#topic_'+level).val();
+alert(topic_value);
+$.ajax({
+    url: "http://localhost/edu-app/public/savetopic",
+    type: 'POST',
+    data: {'topicname': topic_value, 'depthlevel': 1},
+    success: function(data) {
+        alert(data);
+    }
+  });  
+}
+}  
+function collapseThirdLevel(level_id_value) {
+console.log('=='+level_id_value);  
+if($('#ec_'+level_id_value).hasClass('fa-minus')) {
+console.log('collapse');
+$( "div[parent_id*='"+level_id_value+"']" ).hide();
+$('#ec_'+level_id_value).addClass('fa-plus').removeClass('fa-minus');
+} else {
+console.log('expand');
+$( "div[parent_id*='"+level_id_value+"']" ).show();
+$('#ec_'+level_id_value).addClass('fa-minus').removeClass('fa-plus');
+} 
+}
+function expandThirdLevel(level_id) {
+$( "div[parent_id*='"+level_id+"']" ).show();
+}
+function deleteLevel() {
+var level_value = $('#level_selector').val().replace('.','');
+var level = level_value.length;
+console.log('level length'+level);
+if( level == 1) {
+$( "div[parent_id*='"+level_value+"']" ).remove();  
+$("div[id^='main_area"+level_value+"']").remove();
+}
+if( level == 2) {
+$( "div[parent_id*='"+level_value+"']" ).remove();  
+$("div[id^='main_area"+level_value+"']").remove();
+}
+if( level == 3 || level == 4) {  
+console.log('in level 3'+level_value);
+level_value = level_value.replace('.','');
+$("#main_area"+level_value).remove();
+}
+//$('#main_area'+level_value).remove();  
+}  
+function setLevel(level_value){
+$('#level_selector').val(level_value);
+$("input:checkbox").prop('checked', false);
+$("#defaultInline"+level_value).prop('checked', true);
+}
+function setLevel1(level,value){
+$('#level_selector').val(level+'.'+value);
+$("input:checkbox").prop('checked', false);
+$("#defaultInline"+level+'.'+value).prop('checked', true);
+}	
+function createChild() {
+	var number_of_childs = $('#number_of_childs').val();
+	console.log('num of childs='+number_of_childs);
+	if( number_of_childs !=0 ) {
+	for( var i=number_of_childs; i>=1; i--){
+	var level = $('#level_selector').val();
+	if( level == '' ) { 
+	append_to = 'main_area';
+  	//$('#'+append_to).append('<div class="col-12 row" id="main_area'+i+'"><div class="col-12  col-sm-12 col-md-3 mb-3" ><i class="fas fa-minus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" class="custom-control-input" id="defaultInline'+i+'" onclick="setLevel('+i+')"><label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline'+i+'">Topic '+i+'</label></div><!-- Default inline 2--></div><div class="col-12 col-sm-12 col-md-9  mb-3 "><input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1"></div></div>');
+	$('#'+append_to).after('<div class="row mb-2 text-left" id="main_area'+i+'">'+
+                                            '<div class="col-3 mt-1">'+
+                                               '<i class="fas fa-minus mt-1 mychange" id="ec_'+level+i+'" aria-hidden="true" onclick="collapseThirdLevel('+level+i+')"></i> <div class="custom-control ml-3 custom-checkbox">'+
+                                                     '<input type="checkbox" class="custom-control-input" id="defaultInline'+i+'" onclick="setLevel('+i+')">'+
+                                                    '<label class="custom-control-label" for="defaultInline'+i+'">Topic '+i+'</label>'+
+                                                '</div>'+
+                                            '</div>'+
+                                            '<div class="col-9">'+
+                                                '<input type="text" class="form-control" placeholder="Topic Name"  id="topic_'+i+'" topic_db_id="0" topic_parent_id="0" onblur="saveTopic('+i+')" aria-label="Username" aria-describedby="basic-addon1">'+
+                                            '</div>'+
+                                        '</div>');
+	}
+	else {
+	indent = '';
+	level_found = (level.match(/./g) || []).length; 
+	for( var ls=0;ls<=level_found;ls++) {
+		if( indent == '') { indent = '&nbsp;&nbsp;&nbsp;'; }
+		else { indent = '&nbsp;&nbsp;&nbsp;';}
+	} 
+	if( level_found == 0 || level_found == 1 ) {
+	append_to = 'main_area'+level;
+	//console.log('indent='+indent);
+	//console.log('level='+level);
+	//console.log('level found='+level_found);
+	console.log('append to='+append_to);
+	//console.log('id='+'main_area'+level+'.'+i); 
+	$('#'+append_to).after('<!--for second level--><div class="row  mb-2 text-left" id="main_area'+level+i+'" parent_id="'+level.replace('.','')+'"><div class="col-3 mt-1 pl-5">'+
+                                               '<i class="fas fa-minus mt-1 mychange" id="ec_'+level+i+'" aria-hidden="true" onclick="collapseThirdLevel('+level+i+')"></i> <div class="custom-control ml-3 custom-checkbox">'+
+                                                     '<input type="checkbox" class="custom-control-input" id="defaultInline'+level.replace('.','')+i+'" onclick="setLevel('+level.replace('.','')+'.'+i+')">'+
+                                                    '<label class="custom-control-label" for="defaultInline'+level+i+'">'+level+'.'+i+'</label>'+
+                                                '</div>'+
+                                            '</div><div class="col-9">'+
+                                                '<input type="text" class="form-control" placeholder="Topic Name"  id="topic_'+level.replace('.','')+i+'"  topic_db_id="0" topic_parent_id="'+level.replace('.','')+'" onblur="saveTopic('+level.replace('.','')+i+')" aria-label="Username" aria-describedby="basic-addon1">'+
+                                            '</div></div>');
+   }
+  if( level_found ==2 || level_found == 3) {
+  	append_to = 'main_area'+level.replace('.','');
+	//console.log('indent='+indent);
+	//console.log('level='+level);
+	//console.log('level found='+level_found);
+	console.log('append to='+append_to);
+	//console.log('id='+'sub_area'+level+'.'+i);
+   	$('#'+append_to).after('<!-- for lvel 3 --><div class="row mb-2 text-left" id="main_area'+level.replace('.','')+i+'" parent_id="'+level.replace('.','')+'"><div class="col-3 mt-1 pl-7">'+
+                                               '<div class="custom-control ml-3 custom-checkbox">'+
+                                                     '<input type="checkbox" class="custom-control-input" id="defaultInline'+level.replace('.','')+i+'" onclick="setLevel1('+level+','+i+')">'+
+                                                    '<label class="custom-control-label" for="defaultInline'+level.replace('.','')+i+'">'+level+'.'+i+'</label>'+
+                                                '</div>'+
+                                            '</div>'+
+                                            '<div class="col-9">'+
+                                                '<input type="text" class="form-control" placeholder="Topic Name" id="topic_'+level.replace('.','')+i+'"   topic_db_id="0" topic_parent_id="'+level.replace('.','')+'" onblur="saveTopic('+level.replace('.','')+i+')" aria-label="Username" aria-describedby="basic-addon1">'+
+                                            '</div></div>');
+   }
+	} 	
+	
+}
+}
+//$('input:checkbox:checked').removeAttr('checked');
+$("input:checkbox").prop('checked', false);
+$('#level_selector').val(0);
+}
+</script>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+              <a class="navbar-brand mt-0 pt-0" href="#"><img src="images/logo.png" width="169px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                   
+                </ul>
+              
+                
+            </div>
+        </div>
+    </nav>
+     <div class="container">
+
+        <section>
+             <nav aria-label="breadcrumb \" class="d-none d-sm-none d-md-block">
+                <ol class="breadcrumb white lighten-4 navbar-light bg-light mt-3">
+                    <li class=""><a class="text-success" href="sa_addcountry.html">Dashboard</a><i class="fas fa-angle-right mx-2"
+                            aria-hidden="true"></i></li>
+                    <li class=""><a class="text-grey" href="sa_addschool.html">Add Topics</a></li>
+                    
+                </ol>
+            </nav>
+             <div class="sedsec shadow border px-3">
+                    <div class="row  text-black">
+                        <div class="col-12  mytabs pt-3 pb-1 text-center border-bottom text-black">
+                            <h5 class="h5 text-black">
+                               Add Topics
+                               </h5>
+                        </div>
+
+                        <div class="col-sm-12 col-md-2 col-lg-2 my-3 ">
+                            
+                        </div>
+                        <div class="col-sm-6 col-md-8 col-lg-8 my-3 ">
+                            <div class=" p-3 bg-white rounded-top">
+                                <!-- Default form register -->
+                                <form class="text-center " action="#!">
+                                        <div class="row text-left">
+                                        
+                                                     
+                                               
+                                                <div class="col-12 col-sm-12 col-md-3 mb-3 ">
+                                                     <span class="form-text   text-muted pr-2 font-weight-bold">Course:Maths </span>
+                                                    
+                                                </div>
+                                                 <div class="col-12 col-sm-6 col-md-4  mb-3 ">
+                                                 <input type="number" class="form-control" id='number_of_childs' max='25'>    
+            									<input type='hidden' id='level_selector'>
+                                                    
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-4 pt-1 mb-3 ">
+                                                  
+                                                      <button type="button" class="btn btn-primary btn-sm " onclick="deleteLevel()"><i class="fas fa-trash-alt"></i> Delete</button>
+
+                                                     &nbsp; </i> <button type="button" class="btn btn-primary btn-sm " onclick='createChild()'>Create</button></div>
+
+                                                      <div class="col-12 col-sm-4 col-md-3 mb-2">
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Upload <i class="fas fa-info-circle"></i> :</span>
+                                                </div>
+                                                 <div class="col-12 col-sm-8 col-md-9  mb-2">
+                                                    <input class="form-control  pt-1 p-1" id="imgUpload" name="imgUpload" accept="image/*" type="file">
+                                                </div>
+                                             				
+                                         </div>
+                                         <div id="main_area"></div>
+                                    </div>
+                                        <hr>
+                                        <!-- Sign up button -->
+                                        <div class="text-center mb-3">
+                                          <a class="text-dark" href="sa_addcourse.html"><button type="button" class="btn btn-primary btn-md">Previous</button></a>
+                                         <a class="text-dark" href="sa_addcontent.html"><button type="button" class="btn btn-primary btn-md">Add Content</button></a>
+                                         <a class="text-dark" href="sa_dashbord.html"><button type="button" class="btn btn-primary btn-md">Cancel</button></a>
+                                         <br>
+                                        </div>
+                                        
+    
+                                    </form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<footer class="page-footer font-small navbar-light bg-light  mt-4">
+
+        <!-- Footer Links -->
+       
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 - 2021 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> EDU APP | VONKDOTH PRODUCT</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
