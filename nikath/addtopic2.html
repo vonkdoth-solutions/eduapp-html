@@ -20,93 +20,20 @@
     </style>
 </head>
 <script>
-function saveTopic(level) {
-//alert(level);
-alert('topic_'+$('#topic_'+level).attr('topic_parent_id'));
-var parent_id = $('#topic_'+level).attr('topic_parent_id');
-if( parent_id!= 0) {
-var parent_value = $('#topic_'+parent_id).val();  
-if( parent_value=='' ){
-  alert('Please fill the parent topic first');
-  $('#topic'+parent_id).css('border-color', 'red');
-}  
-} else {
-var topic_value = $('#topic_'+level).val();
-alert(topic_value);
-$.ajax({
-    url: "http://localhost/edu-app/public/savetopic",
-    type: 'POST',
-    data: {'topicname': topic_value, 'depthlevel': 1},
-    success: function(data) {
-        alert(data);
-    }
-  });  
-}
-}  
-function collapseThirdLevel(level_id_value) {
-console.log('=='+level_id_value);  
-if($('#ec_'+level_id_value).hasClass('fa-minus')) {
-console.log('collapse');
-$( "div[parent_id*='"+level_id_value+"']" ).hide();
-$('#ec_'+level_id_value).addClass('fa-plus').removeClass('fa-minus');
-} else {
-console.log('expand');
-$( "div[parent_id*='"+level_id_value+"']" ).show();
-$('#ec_'+level_id_value).addClass('fa-minus').removeClass('fa-plus');
-} 
-}
-function expandThirdLevel(level_id) {
-$( "div[parent_id*='"+level_id+"']" ).show();
-}
-function deleteLevel() {
-var level_value = $('#level_selector').val().replace('.','');
-var level = level_value.length;
-console.log('level length'+level);
-if( level == 1) {
-$( "div[parent_id*='"+level_value+"']" ).remove();  
-$("div[id^='main_area"+level_value+"']").remove();
-}
-if( level == 2) {
-$( "div[parent_id*='"+level_value+"']" ).remove();  
-$("div[id^='main_area"+level_value+"']").remove();
-}
-if( level == 3 || level == 4) {  
-console.log('in level 3'+level_value);
-level_value = level_value.replace('.','');
-$("#main_area"+level_value).remove();
-}
-//$('#main_area'+level_value).remove();  
-}  
 function setLevel(level_value){
 $('#level_selector').val(level_value);
 $("input:checkbox").prop('checked', false);
 $("#defaultInline"+level_value).prop('checked', true);
-}
-function setLevel1(level,value){
-$('#level_selector').val(level+'.'+value);
-$("input:checkbox").prop('checked', false);
-$("#defaultInline"+level+'.'+value).prop('checked', true);
 }	
 function createChild() {
 	var number_of_childs = $('#number_of_childs').val();
 	console.log('num of childs='+number_of_childs);
 	if( number_of_childs !=0 ) {
-	for( var i=number_of_childs; i>=1; i--){
+	for( var i=1; i<=number_of_childs; i++){
 	var level = $('#level_selector').val();
 	if( level == '' ) { 
 	append_to = 'main_area';
-  	//$('#'+append_to).append('<div class="col-12 row" id="main_area'+i+'"><div class="col-12  col-sm-12 col-md-3 mb-3" ><i class="fas fa-minus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" class="custom-control-input" id="defaultInline'+i+'" onclick="setLevel('+i+')"><label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline'+i+'">Topic '+i+'</label></div><!-- Default inline 2--></div><div class="col-12 col-sm-12 col-md-9  mb-3 "><input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1"></div></div>');
-	$('#'+append_to).after('<div class="row mb-2 text-left" id="main_area'+i+'">'+
-                                            '<div class="col-3 mt-1">'+
-                                               '<i class="fas fa-minus mt-1 mychange" id="ec_'+level+i+'" aria-hidden="true" onclick="collapseThirdLevel('+level+i+')"></i> <div class="custom-control ml-3 custom-checkbox">'+
-                                                     '<input type="checkbox" class="custom-control-input" id="defaultInline'+i+'" onclick="setLevel('+i+')">'+
-                                                    '<label class="custom-control-label" for="defaultInline'+i+'">Topic '+i+'</label>'+
-                                                '</div>'+
-                                            '</div>'+
-                                            '<div class="col-9">'+
-                                                '<input type="text" class="form-control" placeholder="Topic Name"  id="topic_'+i+'" topic_db_id="0" topic_parent_id="0" onblur="saveTopic('+i+')" aria-label="Username" aria-describedby="basic-addon1">'+
-                                            '</div>'+
-                                        '</div>');
+	$('#'+append_to).append('<div class="col-12 row" id="main_area'+i+'"><div class="col-12  col-sm-12 col-md-3 mb-3" ><i class="fas fa-minus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" class="custom-control-input" id="defaultInline'+i+'" onclick="setLevel('+i+')"><label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline'+i+'">Topic '+i+'</label></div><!-- Default inline 2--></div><div class="col-12 col-sm-12 col-md-9  mb-3 "><input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1"></div></div>');
 	}
 	else {
 	indent = '';
@@ -115,38 +42,17 @@ function createChild() {
 		if( indent == '') { indent = '&nbsp;&nbsp;&nbsp;'; }
 		else { indent = '&nbsp;&nbsp;&nbsp;';}
 	} 
-	if( level_found == 0 || level_found == 1 ) {
 	append_to = 'main_area'+level;
-	//console.log('indent='+indent);
-	//console.log('level='+level);
-	//console.log('level found='+level_found);
+	console.log('indent='+indent);
+	console.log('level='+level);
+	console.log('level found='+level_found);
 	console.log('append to='+append_to);
-	//console.log('id='+'main_area'+level+'.'+i); 
-	$('#'+append_to).after('<!--for second level--><div class="row  mb-2 text-left" id="main_area'+level+i+'" parent_id="'+level.replace('.','')+'"><div class="col-3 mt-1 pl-5">'+
-                                               '<i class="fas fa-minus mt-1 mychange" id="ec_'+level+i+'" aria-hidden="true" onclick="collapseThirdLevel('+level+i+')"></i> <div class="custom-control ml-3 custom-checkbox">'+
-                                                     '<input type="checkbox" class="custom-control-input" id="defaultInline'+level.replace('.','')+i+'" onclick="setLevel('+level.replace('.','')+'.'+i+')">'+
-                                                    '<label class="custom-control-label" for="defaultInline'+level+i+'">'+level+'.'+i+'</label>'+
-                                                '</div>'+
-                                            '</div><div class="col-9">'+
-                                                '<input type="text" class="form-control" placeholder="Topic Name"  id="topic_'+level.replace('.','')+i+'"  topic_db_id="0" topic_parent_id="'+level.replace('.','')+'" onblur="saveTopic('+level.replace('.','')+i+')" aria-label="Username" aria-describedby="basic-addon1">'+
-                                            '</div></div>');
+	console.log('id='+'main_area'+level+'.'+i);
+	if( level_found == 0 || level_found == 1 ) { 
+	$('#'+append_to).append('<div class="col-12 row" id="sub_area'+level+'.'+i+'"><div class="col-12  col-sm-12 col-md-3 mb-3" >'+indent+'<i class="fas fa-minus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" class="custom-control-input" id="defaultInline'+level+'.'+i+'" onclick="setLevel('+level+'.'+i+')"><label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline'+level+'.'+i+'">'+level+'.'+i+'</label></div><!-- Default inline 2--></div><div class="col-12 col-sm-12 col-md-9  mb-3 ">&nbsp;<input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1"></div></div>');
    }
-  if( level_found ==2 || level_found == 3) {
-  	append_to = 'main_area'+level.replace('.','');
-	//console.log('indent='+indent);
-	//console.log('level='+level);
-	//console.log('level found='+level_found);
-	console.log('append to='+append_to);
-	//console.log('id='+'sub_area'+level+'.'+i);
-   	$('#'+append_to).after('<!-- for lvel 3 --><div class="row mb-2 text-left" id="main_area'+level.replace('.','')+i+'" parent_id="'+level.replace('.','')+'"><div class="col-3 mt-1 pl-7">'+
-                                               '<div class="custom-control ml-3 custom-checkbox">'+
-                                                     '<input type="checkbox" class="custom-control-input" id="defaultInline'+level.replace('.','')+i+'" onclick="setLevel1('+level+','+i+')">'+
-                                                    '<label class="custom-control-label" for="defaultInline'+level.replace('.','')+i+'">'+level+'.'+i+'</label>'+
-                                                '</div>'+
-                                            '</div>'+
-                                            '<div class="col-9">'+
-                                                '<input type="text" class="form-control" placeholder="Topic Name" id="topic_'+level.replace('.','')+i+'"   topic_db_id="0" topic_parent_id="'+level.replace('.','')+'" onblur="saveTopic('+level.replace('.','')+i+')" aria-label="Username" aria-describedby="basic-addon1">'+
-                                            '</div></div>');
+   if( level_found ==2 || level_found == 3) {
+   	$('#sub_area1.1').append('Hi');
    }
 	} 	
 	
@@ -224,7 +130,7 @@ $('#level_selector').val(0);
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-4 pt-1 mb-3 ">
                                                   
-                                                      <button type="button" class="btn btn-primary btn-sm " onclick="deleteLevel()"><i class="fas fa-trash-alt"></i> Delete</button>
+                                                      <button type="button" class="btn btn-primary btn-sm "><i class="fas fa-trash-alt"></i> Delete</button>
 
                                                      &nbsp; </i> <button type="button" class="btn btn-primary btn-sm " onclick='createChild()'>Create</button></div>
 
@@ -234,9 +140,98 @@ $('#level_selector').val(0);
                                                  <div class="col-12 col-sm-8 col-md-9  mb-2">
                                                     <input class="form-control  pt-1 p-1" id="imgUpload" name="imgUpload" accept="image/*" type="file">
                                                 </div>
-                                             				
-                                         </div>
-                                         <div id="main_area"></div>
+                                             <!--<div class="col-12 col-sm-12 col-md-12  mb-2 border-bottom" id="main_area"></div>
+                                                 -->
+												
+                                             
+                                        </div>
+
+                                        <!-- Harish Edula Added -->
+                                        <div class="row mb-2 text-left">
+                                                    
+                                            <div class="col-3 mt-1">
+                                               <i class="fas fa-minus mt-1 mychange" aria-hidden="true"></i> <div class="custom-control ml-3 custom-checkbox">
+                                                     <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                    <label class="custom-control-label" for="customCheck1">Topic 1</label>
+                                                </div>
+
+                                                <!-- <div class="col-12  col-sm-12 col-md-3 mb-3"><div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" class="custom-control-input" id="defaultInline1" onclick="setLevel(1)"><label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default="" for="defaultInline1">Topic 1</label></div>Default inline 2</div> -->
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                        <div class="row  mb-2 text-left" id="sub">
+                                                    
+                                            <div class="col-3 mt-1 pl-5">
+                                               <i class="fas fa-minus mt-1 mychange" aria-hidden="true"></i> <div class="custom-control ml-3 custom-checkbox">
+                                                     <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                    <label class="custom-control-label" for="customCheck2">1.1</label>
+                                                </div>
+
+                                                <!-- <div class="col-12  col-sm-12 col-md-3 mb-3"><div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" class="custom-control-input" id="defaultInline1" onclick="setLevel(1)"><label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default="" for="defaultInline1">Topic 1</label></div>Default inline 2</div> -->
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2 text-left" id="sub2">
+                                                    
+                                            <div class="col-3 mt-1 pl-7">
+                                               <i class="fas fa-plus mt-1 mychange" aria-hidden="true"></i> <div class="custom-control ml-3 custom-checkbox">
+                                                     <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                    <label class="custom-control-label" for="customCheck3">1.1.1</label>
+                                                </div>
+
+                                                <!-- <div class="col-12  col-sm-12 col-md-3 mb-3"><div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" class="custom-control-input" id="defaultInline1" onclick="setLevel(1)"><label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default="" for="defaultInline1">Topic 1</label></div>Default inline 2</div> -->
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2 text-left">
+                                                    
+                                            <div class="col-3 mt-1">
+                                               <i class="fas fa-minus mt-1 mychange" aria-hidden="true"></i> <div class="custom-control ml-3 custom-checkbox">
+                                                     <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                                    <label class="custom-control-label" for="customCheck5">Topic 2</label>
+                                                </div>
+
+                                                <!-- <div class="col-12  col-sm-12 col-md-3 mb-3"><div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" class="custom-control-input" id="defaultInline1" onclick="setLevel(1)"><label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default="" for="defaultInline1">Topic 1</label></div>Default inline 2</div> -->
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                        <div class="row  mb-2 text-left" id="sub">
+                                                    
+                                            <div class="col-3 mt-1 pl-5">
+                                               <i class="fas fa-minus mt-1 mychange" aria-hidden="true"></i> <div class="custom-control ml-3 custom-checkbox">
+                                                     <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                    <label class="custom-control-label" for="customCheck4">2.1</label>
+                                                </div>
+
+                                                <!-- <div class="col-12  col-sm-12 col-md-3 mb-3"><div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" class="custom-control-input" id="defaultInline1" onclick="setLevel(1)"><label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default="" for="defaultInline1">Topic 1</label></div>Default inline 2</div> -->
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                        <div class="row  text-left" id="sub2">
+                                                    
+                                            <div class="col-3 mt-1 pl-7">
+                                               <i class="fas fa-plus mt-1 mychange" aria-hidden="true"></i> <div class="custom-control ml-3 custom-checkbox">
+                                                     <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                                    <label class="custom-control-label" for="customCheck6">2.1.1</label>
+                                                </div>
+
+                                                <!-- <div class="col-12  col-sm-12 col-md-3 mb-3"><div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" class="custom-control-input" id="defaultInline1" onclick="setLevel(1)"><label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default="" for="defaultInline1">Topic 1</label></div>Default inline 2</div> -->
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                        <!-- Harish Edula Added Ends -->
                                     </div>
                                         <hr>
                                         <!-- Sign up button -->
@@ -270,7 +265,7 @@ $('#level_selector').val(0);
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>

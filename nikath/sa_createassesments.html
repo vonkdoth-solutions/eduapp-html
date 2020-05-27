@@ -9,20 +9,21 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/mystyle.css">
-     <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="https://kit.fontawesome.com/8b6e3a52ac.js" crossorigin="anonymous"></script>
-    <link  rel="stylesheet" href="css/select2.min.css">
-<script src="js/select2.min.js"></script>
+    <link rel="stylesheet" href="css/select2.min.css">
+    <script src="js/select2.min.js"></script>
     <title>Create Assesments</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-              <a class="navbar-brand mt-0 pt-0" href="#"><img src="images/logo.png" width="169px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+            <a class="navbar-brand mt-0 pt-0" href="#"><img src="images/logo.png" width="169px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
+                aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse" id="navbarsExample07">
                 <ul class="navbar-nav mr-auto">
@@ -36,7 +37,8 @@
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown07">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
@@ -44,157 +46,450 @@
                         </div>
                     </li>
                 </ul>
-               
-                 <ul class="nav-item dropdown">
-                       <a class="nav-link dropdown-toggle p-0" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            <img src="images/about-us.jpg" class="rounded mt-1 " width="29px" height="29px">
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown07">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </ul>
+
+                <ul class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle p-0" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="images/about-us.jpg" class="rounded mt-1 " width="29px" height="29px">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown07">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </ul>
             </div>
         </div>
     </nav>
-     <div class="container">
+    <div class="container">
         <section>
-           <nav aria-label="breadcrumb \" class="d-none d-sm-none d-md-block">
+            <nav aria-label="breadcrumb \" class="d-none d-sm-none d-md-block">
                 <ol class="breadcrumb white lighten-4 navbar-light bg-light mt-3">
-                    <li class=""><a class="text-success" href="sa_addcountry.html">Dashboard</a><i class="fas fa-angle-right mx-2"
-                            aria-hidden="true"></i></li>
+                    <li class=""><a class="text-success" href="sa_addcountry.html">Dashboard</a><i
+                            class="fas fa-angle-right mx-2" aria-hidden="true"></i></li>
                     <li class=""><a class="text-grey" href="">Create Assessments</a></li>
-                    
+
                 </ol>
             </nav>
-            
-                <div class="sedsec border px-3">
-                    <div class="row  text-black">
-                        <div class="col-12  mytabs pt-3 pb-1 text-center border-bottom text-black">
-                            <h5 class="h5 text-black">
-                                Create Assessments
-                               
-                        </div>
-                        <div class="col-sm-12 col-md-2 col-lg-2 my-3 d-none d-md-block">
-                            
-                        </div>
-                        <div class="col-sm-6 col-md-8 col-lg-8 my-3 ">
-                            <div class=" p-3 bg-white rounded-top">
-                                <!-- Default form register -->
-                                <form class="text-center " action="#!">
-                                        <div class="row text-left">
-                                        
-                                                
-                                                
-                                                
-                                                
-                                                <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold"> Assessment Title : </span>
-                                                </div>
-                                                <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="Geometry Project " aria-label="Username" aria-describedby="basic-addon1">
-                                                </div>
-                                                  <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Assessment Type : </span>
-                                                </div>
-                                                <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
-                                                    <select class="form-control select2">
-               <option>Select course</option> 
-               <option> Afghanistan</option> 
-               <option>Argentina</option> 
-               <option>Bahrain</option> 
-               <option>Côte d'Ivoire</option> 
-               <option> Denmark</option>
-              
-               
-            </select>
-                                                </div>
-                                                 <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Duration:</span>
-                                                </div>
-                                                <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
-                                                  <input type="time" class="form-control" placeholder="Geometry Project " aria-label="Username" aria-describedby="basic-addon1">
-                                                </div>
-                                                    <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold"> Password : </span>
-                                                </div>
-                                                <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="******* " aria-label="Username" aria-describedby="basic-addon1">
-                                                </div>
-                                                 <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold"> Number Of Attempts Allowed : </span>
-                                                </div>
-                                                <div class="col-12 col-sm-8 col-md-3 input-group mb-3">
-                                                    <input type="Number" class="form-control" placeholder="4" aria-label="Username" aria-describedby="basic-addon1">
-                                                </div> <div class="col-12 col-sm-3 col-md-6 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold"> Security And Compliance Setting :    <i class="fa fa-cog text-dark pt-1" aria-hidden="true"></i>
-</span>
-                                                </div>
-                                                
-                                                
-                                                 
-                                                <div class="col-12 col-sm-12 col-md-3 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Dates Active:</span>
-                                                </div>
-                                                <div class="col-12 col-sm-9 col-md-9 input-group mb-3">
-                                                   <input type="Date" class="form-control" placeholder="Geometry Project " aria-label="Username" aria-describedby="basic-addon1">
-                                                       <span class="form-text  text-muted pr-2 font-weight-bold"> &nbsp;To </span> <input type="Date" class="form-control" placeholder="Geometry Project " aria-label="Username" aria-describedby="basic-addon1">
-                                                </div>
-                                                 <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                                  <span class="form-text  text-muted pr-2 font-weight-bold">Select Question:  </span>
-                                                    
-                                                </div>
-                                                 
-                                                <div class="col-12  col-sm-12 col-md-12 col-lg-9  input-group mb-3" id="course" >
-                                                <!-- Default inline 1-->
-                                           <div class="custom-control custom-radio custom-control-inline">
-                                                  <input type="radio" class="custom-control-input" id="yes" checked="checked" name="inlineDefaultRadiosExample">
-                                                  <label class="custom-control-label form-text  text-muted pr-2 font-weight-bolder" default for="yes">Select From a Course</label>
-                                                </div>
-    
-                                                <!-- Default inline 2-->
-                                                <div class="custom-control custom-radio custom-control-inline">
-                                                  <input type="radio" class="custom-control-input" id="no" name="inlineDefaultRadiosExample">
-                                                  <label class="custom-control-label form-text  text-muted pr-2 font-weight-bolder" for="no">Select  From The Repository</label>
-                                                </div>
-    
-                                                <!-- Default inline 2-->
-                                               
-                                            </div>
-                                               
-                                               
-                                                    
-                                            </div>
-                                        
-                                        <hr>
-                                        <!-- Sign up button -->
-                                        <a href="sa_questionsrepisotery.html"> <button type="button" class="btn btn-primary btn-md">Save</button></a>
-                                        
-                                         <a href="sa_selectfromcourse.html"> <button type="button" class="btn btn-primary btn-md">Next</button></a>
-                                        
-                                        
-                                        
-    
-                                    </form>
-                                <!-- Default form register -->
+            <!-- Modal1 -->
+            <div class="modal fade" id="basicExampleModalTeam" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog " role="document">
+                    <div class="searchmodal">
+
+                        <div class="modal-body">
+                            <div class="row border-bottom ">
+                                <div class="col-12 col-sm-12 mb-2">
+                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                                    <h4 class="text-primary text-center"><b>Edit Assessments Settings</b></h4>
+                                </div>
                             </div>
+                            <div class="row">
+                                <!--<div class="col-sm-12 col-md-3 col-lg-3 my-3 ">
+                                    
+                                </div>-->
+
+                                <div class="col-sm-12 col-md-12 col-lg-12 my-0 text-center">
+
+                                    <div class=" p-3 bg-white rounded-top">
+                                        <!-- Default form register -->
+
+                                        <form class=" " action="#!">
+                                            <div class="row text-left ">
+                                                <div class="col-12 col-sm-12 col-md-12 mb-3 text-center ">
+                                                    <span class="form-text text-muted pr-2 font-weight-bold"><b>
+                                                            <h5 class="text-primary"> <b>Security and Compliance
+                                                                    Setting</b></h5>
+                                                        </b> </span>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 mb-3 text-center">
+                                                    <span class="form-text text-muted pr-2 font-weight-bold"><b>
+                                                            <h5 class="text-primary"> <b>Dummy Assesments:
+                                                                    Assesments</b></h5>
+                                                        </b> </span>
+                                                </div>
+                                                <div class="col-12 col-sm-7 col-md-7 mb-3 ">
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Allow
+                                                        Students To view Question Feedback : </span>
+                                                </div>
+                                                <div class="col-12 col-sm-5 col-md-5 mb-3 ">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="yes1"
+                                                            name="Results">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-2 font-weight-bolder"
+                                                            default for="yes1">Yes</label>
+                                                    </div>
+
+                                                    <!-- Default inline 2-->
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="no1"
+                                                            checked="checked" name="Results">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-2 font-weight-bolder"
+                                                            for="no1">No</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-7 col-md-7 mb-3 ">
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Allow
+                                                        Students To view Solution : </span>
+                                                </div>
+                                                <div class="col-12 col-sm-5 col-md-5 mb-3 ">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="yes2"
+                                                           name="spanish">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-2 font-weight-bolder"
+                                                            default for="yes2">Yes</label>
+                                                    </div>
+
+                                                    <!-- Default inline 2-->
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="no2"
+                                                           checked="checked"  name="spanish">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-2 font-weight-bolder"
+                                                            for="no2">No</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-7 col-md-7 mb-3 ">
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Allow
+                                                        Students To view Score : </span>
+                                                </div>
+                                                <div class="col-12 col-sm-5 col-md-5 mb-3 ">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="yes8"
+                                                            name="score">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-2 font-weight-bolder"
+                                                            default for="yes8">Yes</label>
+                                                    </div>
+
+                                                    <!-- Default inline 2-->
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="no8"
+                                                            checked="checked" name="score">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-2 font-weight-bolder"
+                                                            for="no8">No</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-7 col-md-7 mb-3 ">
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Enable
+                                                        Text-to-Speech Functionality : </span>
+                                                </div>
+                                                <div class="col-12 col-sm-5 col-md-5 mb-3 ">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="yes3"
+                                                            checked="checked" name="Functionality">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-2 font-weight-bolder"
+                                                            default for="yes3">Yes</label>
+                                                    </div>
+
+                                                    <!-- Default inline 2-->
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="no3"
+                                                            name="Functionality">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-2 font-weight-bolder"
+                                                            for="no3">No</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-7 col-md-7 mb-3 ">
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Display
+                                                        Question In Random Order: </span>
+                                                </div>
+                                                <div class="col-12 col-sm-5 col-md-5 mb-3 ">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="yes4"
+                                                           name="Random">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-2 font-weight-bolder"
+                                                            default for="yes4">Yes</label>
+                                                    </div>
+
+                                                    <!-- Default inline 2-->
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="no4"
+                                                           checked="checked"  name="Random">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-2 font-weight-bolder"
+                                                            for="no4">No</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-7 col-md-7 mb-3 ">
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Assessment Can Be Taken From a Fixed Location: </span>
+                                                </div>
+                                                <div class="col-12 col-sm-5 col-md-5 mb-3 ">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="yes5"
+                                                           name="Question">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-2 font-weight-bolder"
+                                                            default for="yes5">Yes</label> </div>
+
+                                                    <!-- Default inline 2-->
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="no5"
+                                                            checked="checked" name="Question">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-2 font-weight-bolder"
+                                                            for="no5">No</label> </div>
+                                                </div>
+                                                <div class="col-12 col-sm-7 col-md-7 mb-3 ">
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Share
+                                                        Assessment : </span>
+                                                </div>
+                                                <div class="col-12 col-sm-5 col-md-5 mb-3 ">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="yes6"
+                                                            checked="checked" name="Assessment">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-2 font-weight-bolder"
+                                                            default for="yes6">yes</label> </div>
+                                                    <!-- Default inline 2-->
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="no6"
+                                                            name="Assessment">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-0 font-weight-bolder"
+                                                            for="no6">No</label>
+                                                    </div>
+                                                </div>
+                                                 <div class="col-12 col-sm-7 col-md-7 mb-3 ">
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">
+                                                        Assessment Can Be Taken Remotely : </span>
+                                                </div>
+                                                <div class="col-12 col-sm-5 col-md-5 mb-3 ">
+                                                   <a href=""> <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="yes9"
+                                                           name="remotely">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-2 font-weight-bolder"
+                                                            default for="yes9">yes</label> </div></a>
+                                                    <!-- Default inline 2-->
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="no9"
+                                                            checked="checked" name="remotely">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-0 font-weight-bolder"
+                                                            for="no9">No</label>
+                                                    </div>
+                                                </div>
+                                                 <div class="col-12 col-sm-7 col-md-7 mb-3 ">
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Enable Secure Browser Mode : </span>
+                                                </div>
+                                                <div class="col-12 col-sm-5 col-md-5 mb-3 ">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="yes10"
+                                                            name="browsing">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-2 font-weight-bolder"
+                                                            default for="yes10">yes</label> </div>
+                                                    <!-- Default inline 2-->
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="no10"
+                                                          checked="checked"   name="browsing">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-0 font-weight-bolder"
+                                                            for="no10">No</label>
+                                                    </div>
+                                                </div>
+                                                 <div class="col-12 col-sm-7 col-md-7 mb-3 ">
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Will be Counted to Grade: </span>
+                                                </div>
+                                                <div class="col-12 col-sm-5 col-md-5 mb-3 ">
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="yes11"
+                                                            checked="checked" name="grade">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-2 font-weight-bolder"
+                                                            default for="yes11">yes</label> </div>
+                                                    <!-- Default inline 2-->
+                                                    <div class="custom-control custom-radio custom-control-inline">
+                                                        <input type="radio" class="custom-control-input" id="no11"
+                                                            name="grade">
+                                                        <label
+                                                            class="custom-control-label form-text  text-muted pr-0 font-weight-bolder"
+                                                            for="no11">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Countries List -->
+                                            <!-- Countries List End -->
+                                        </form>
+                                        <!-- Default form register -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <!-- Sign up button -->
+
+                        </div>
+                        <div class="modal-footer text-center py-1">
+                            <div class="col-12 text-center">
+                                <button type="button" class="btn btn-primary btn-md ">Save Setting</button></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="sedsec border px-3">
+                <div class="row  text-black">
+                    <div class="col-12  mytabs pt-3 pb-1 text-center border-bottom text-black">
+                        <h5 class="h5 text-black">
+                            Create Assessments
+
+                    </div>
+                    <div class="col-sm-12 col-md-2 col-lg-2 my-3 d-none d-md-block">
+
+                    </div>
+                    <div class="col-sm-6 col-md-8 col-lg-8 my-3 ">
+                        <div class=" p-3 bg-white rounded-top">
+                            <!-- Default form register -->
+                            <form class="text-center " action="#!">
+                                <div class="row text-left">
+
+
+
+
+
+                                    <div class="col-12 col-sm-4 col-md-3 mb-3">
+                                        <span class="form-text  text-muted pr-2 font-weight-bold"> Assessment Title :
+                                        </span>
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Geometry Project "
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 mb-3">
+                                        <span class="form-text  text-muted pr-2 font-weight-bold">Assessment Type :
+                                        </span>
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
+                                        <select class="form-control select2">
+                                            <option>Select Assessment Type</option>
+                                            <option> Multiple Choice questions</option>
+                                            <option>True False</option>
+                                            <option>Fill in The Blank Text</option>
+                                            <option>Ordering</option>
+                                           
+
+
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 mb-3">
+                                        <span class="form-text  text-muted pr-2 font-weight-bold">Duration:</span>
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
+                                        <input type="time" class="form-control" placeholder="Geometry Project "
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 mb-3">
+                                        <span class="form-text  text-muted pr-2 font-weight-bold"> Password : </span>
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="******* "
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 mb-3">
+                                        <span class="form-text  text-muted pr-2 font-weight-bold"> Number Of Attempts
+                                            Allowed : </span>
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-3 input-group mb-3">
+                                        <input type="Number" class="form-control" placeholder="4" aria-label="Username"
+                                            aria-describedby="basic-addon1">
+                                    </div>
+
+
+
+                                  <div class="col-12 col-sm-3 col-md-6 mb-3 "  data-toggle="modal" data-target="#basicExampleModalTeam"> <span class="form-text  text-muted pr-2 font-weight-bold"> Security And Compliance Setting :    <i class="fa fa-cog text-dark pt-1"></i> </span> </div>
+
+
+                                    <div class="col-12 col-sm-12 col-md-3 mb-3">
+                                        <span class="form-text  text-muted pr-2 font-weight-bold">Dates Active:</span>
+                                    </div>
+                                    <div class="col-12 col-sm-9 col-md-9 input-group mb-3">
+                                        <input type="Date" class="form-control" placeholder="Geometry Project "
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                        <span class="form-text  text-muted pr-2 font-weight-bold"> &nbsp;To </span>
+                                        <input type="Date" class="form-control" placeholder="Geometry Project "
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 mb-3">
+                                        <span class="form-text  text-muted pr-2 font-weight-bold">Select Question:
+                                        </span>
+
+                                    </div>
+
+                                    <div class="col-12  col-sm-12 col-md-12 col-lg-9  input-group mb-3" id="course">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline1" checked="checked" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1">Select From a Course</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline2">Select From The Repository</label>
+                                          </div>
+                                    </div>
+
+
+
+                                </div>
+
+                                <hr>
+                                <!-- Sign up button -->
+                                <a href="sa_questionsrepisotery.html"> <button type="button"
+                                        class="btn btn-primary btn-md">Save</button></a>
+
+                                <a href="sa_selectquestionfromcourse.html"> <button type="button"
+                                        class="btn btn-primary btn-md">Next</button></a>
+                                <a href="sa_dashbord.html"> <button type="button"
+                                        class="btn btn-primary btn-md">Cancel</button></a>
+
+
+
+
+                            </form>
+                            <!-- Default form register -->
                         </div>
                     </div>
                 </div>
-            
+            </div>
+
         </section>
         <!-- 2nd Section End -->
-        
+
     </div>
-<script>
-    $('.select2').select2();
-</script>
-<footer class="page-footer font-small navbar-light bg-light  mt-4">
+    <script>
+        $('.select2').select2();
+    </script>
+    <footer class="page-footer font-small navbar-light bg-light  mt-4">
 
         <!-- Footer Links -->
-       
+
         <!-- Footer Links -->
 
         <!-- Copyright -->
@@ -210,5 +505,5 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
-</html>
 
+</html>

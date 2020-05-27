@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/8b6e3a52ac.js" crossorigin="anonymous"></script>
     <link  rel="stylesheet" href="css/select2.min.css">
 <script src="js/select2.min.js"></script>
-    <title>D/countries</title>
+    <title>D/questioncategory</title>
 </head>
 
 <body>
@@ -34,25 +34,60 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  
+                    </li>
+                   
                 </ul>
                 <form class="form-inline my-2 my-md-0">
                     
                 </form>
-               
+                 <ul class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle p-0" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img src="images/about-us.jpg" class="rounded mt-1 " width="29px" height="29px">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown07">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </ul>
             </div>
         </div>
     </nav>
     <div class="container">
-        <!-- Countries List -->
+        
+       
+         <!-- Question category-->
         <section class="my-5 table-section">
+
             <div class="card">
-                <div class="card-header d-flex">
+            <div class="card-header d-flex">
+                <div class="col-5">
                     <div class="feed-header-title">
-                       <h4 class="card-title">Countries  List</h4>
+                      <a class="text-dark" href="">  <h4 class="card-title">Questions</h4></a>
                      </div>
+                 </div>
+                 <div class="col-2">
+                      
+
+            
+        </div> 
+                  <div class="col-2">
+                      <select class="form-control select2 mt-1">
+               <option>Search Select</option> 
+               <option> Question Category</option> 
+               <option>Type</option> 
+               <option>Date</option> 
+               
+              
+               
+            </select>
+
+            
+        </div>  <div class="col-3">
                      <div class="ml-auto">
-                         <form class="form-inline my-2 my-md-0">
+
+                       <form class="form-inline my-2 my-md-0">
              <div class="input-group pt-3 pb-3">
                         <input type="text" class="form-control home-search" placeholder="Search Here">
                         <div class="input-group-append">
@@ -62,16 +97,26 @@
                     </div>
           </form>
                     </div>
+                </div>
 
                 </div>
-                <div class="card-body">
-                    
-                    <div class="table-overflow">
+            
+            
+            
+            
+            <div class="card-body">
+          <div class="table-overflow">
+            
             <table class="table  table-hover">
                 <thead>
                     <tr>
+                    
                        
-                        <th scope="col">Country Names&nbsp;&nbsp;&nbsp;<a class="text-dark" href=""><i class="fas fa-sort"></i></a></th>
+                        <th scope="col">Question Category&nbsp;&nbsp;&nbsp;<a class="text-dark" href=""><i class="fas fa-sort"></i></a></th>
+                        <th scope="col text-center" >Type&nbsp;&nbsp;&nbsp;<a class="text-dark" href=""><i class="fas fa-sort"></i></a></th>
+                        <th scope="col">View</th>
+
+                        <th scope="col">Date Added&nbsp;&nbsp;&nbsp;<a class="text-dark" href=""><i class="fas fa-sort"></i></a></th>
                        
                         <th scope="col" class="text-right">
                             <div class="text-nowrap">Edit - View - Delete</div>
@@ -80,20 +125,11 @@
                 </thead>
                 <tbody>
                     <tr>
-                        
-                        <td>Mark</td>
                        
-                        <td class="text-right">
-                            <div class="text-nowrap">
-                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                       
-                        <td>Mark</td>
+                        <td>Category </td>
+                      <td>Multiple Choice</td>
+                        <td><a href=""><b>view</b></a></td>
+                        <td>28/04/2020</td>
                         
                         <td class="text-right">
                             <div class="text-nowrap">
@@ -101,183 +137,140 @@
                                 <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
                                 <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
                             </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        
-                        <td>Mark</td>
-                        
-                        <td class="text-right">
-                            <div class="text-nowrap">
-                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                     <tr>
-                       
-                        <td>Mark</td>
-                        
-                        <td class="text-right">
-                            <div class="text-nowrap">
-                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                     <tr>
-                      
-                        <td>Mark</td>
-                        
-                        <td class="text-right">
-                            <div class="text-nowrap">
-                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                     <tr>
-                       
-                        <td>Mark</td>
-                        
-                        <td class="text-right">
-                            <div class="text-nowrap">
-                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                     <tr>
-                       
-                        <td>Mark</td>
-                        
-                        <td class="text-right">
-                            <div class="text-nowrap">
-                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                     <tr>
-                       
-                        <td>Mark</td>
-                        
-                        <td class="text-right">
-                            <div class="text-nowrap">
-                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                     <tr>
-                      
-                        <td>Mark</td>
-                        
-                        <td class="text-right">
-                            <div class="text-nowrap">
-                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                     <tr>
-                       
-                        <td>Mark</td>
-                        
-                        <td class="text-right">
-                            <div class="text-nowrap">
-                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                     <tr>
-                       
-                        <td>Mark</td>
-                        
-                        <td class="text-right">
-                            <div class="text-nowrap">
-                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                     <tr>
-                       
-                        <td>Mark</td>
-                        
-                        <td class="text-right">
-                            <div class="text-nowrap">
-                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                     <tr>
-                   
-                        <td>Mark</td>
-                        
-                        <td class="text-right">
-                            <div class="text-nowrap">
-                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                     <tr>
-                      
-                        <td>Mark</td>
-                        
-                        <td class="text-right">
-                            <div class="text-nowrap">
-                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                     <tr>
-                      
-                        <td>Mark</td>
-                        
-                        <td class="text-right">
-                            <div class="text-nowrap">
-                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                     <tr>
-                 
-                        <td>Mark</td>
-                        
-                        <td class="text-right">
-                            <div class="text-nowrap">
-                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
-                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
-                            </div>
-                        </td>
-                    </tr>
-                    
 
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Category </td>
+                        <td>Multiple Choice</td>
+                         <td><a href=""><b>view</b></a></td>
+                         <td>28/04/2020</td>
+                       
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Category </td>
+                       <td>Multiple Choice</td>
+                        <td><a href=""><b>view</b></a></td>
+                        <td>28/04/2020</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                      <tr>
+                       
+                        <td>Category </td>
+                      <td>Multiple Choice</td>
+                        <td><a href=""><b>view</b></a></td>
+                        <td>28/04/2020</td>
+                        
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Category </td>
+                        <td>Multiple Choice</td>
+                         <td><a href=""><b>view</b></a></td>
+                         <td>28/04/2020</td>
+                       
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Category </td>
+                       <td>Multiple Choice</td>
+                        <td><a href=""><b>view</b></a></td>
+                        <td>28/04/2020</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                      <tr>
+                       
+                        <td>Category </td>
+                      <td>Multiple Choice</td>
+                        <td><a href=""><b>view</b></a></td>
+                        <td>28/04/2020</td>
+                        
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Category </td>
+                        <td>Multiple Choice</td>
+                         <td><a href=""><b>view</b></a></td>
+                         <td>28/04/2020</td>
+                       
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Category </td>
+                       <td>Multiple Choice</td>
+                        <td><a href=""><b>view</b></a></td>
+                        <td>28/04/2020</td>
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                                <button class="btn btn-link"> <i class="fas fa-pen"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                                <button class="btn btn-link"> <i class="fas fa-trash-alt text-danger"></i></button>
+                            </div>
+
+                        </td>
+                    </tr>
                 </tbody>
             </table>
-        </div>
-        </div>
-         <div class="col-12 col-sm-12 col-md-12 col-lg-12 mt-0">
+            
+            </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 mt-0">
 <div class=" justify text-center">
   <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
@@ -292,10 +285,11 @@
 </nav>
 </div>
 </div>
-    </div>
+            </div>
+            
         </section>
-        <!-- Countries List End -->
-        
+        <!-- Topic list End -->
+         
     </div>
 </div>
 </main>

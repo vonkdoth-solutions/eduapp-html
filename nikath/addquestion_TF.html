@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/8b6e3a52ac.js" crossorigin="anonymous"></script>
     <link  rel="stylesheet" href="css/select2.min.css">
 <script src="js/select2.min.js"></script>
-    <title>Add School</title>
+    <title>Add Question</title>
 </head>
 
 <body>
@@ -44,9 +44,7 @@
                         </div>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-md-0">
-                    
-                </form>
+               
                  <ul class="nav-item dropdown">
                        <a class="nav-link dropdown-toggle p-0" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
@@ -67,7 +65,7 @@
                 <ol class="breadcrumb white lighten-4 navbar-light bg-light mt-3">
                     <li class=""><a class="text-success" href="sa_dashbord.html">Dashboard</a><i class="fas fa-angle-right mx-2"
                             aria-hidden="true"></i></li>
-                    <li class=""><a class="text-grey" href="sa_addschool.html">Add School</a></li>
+                    <li class=""><a class="text-grey" href="#">Add Question</a></li>
                     
                 </ol>
             </nav>
@@ -76,124 +74,82 @@
                     <div class="row  text-black">
                         <div class="col-12  mytabs pt-3 pb-1 text-center border-bottom text-black">
                             <h5 class="h5 text-black">
-                                Add School
+                                Add Question
                                
                         </div>
-                        <div class="col-sm-12 col-md-2 col-lg-2 my-3 d-none d-md-block">
+                        <div class="col-sm-12 col-md-1 col-lg-1 my-3 d-none d-md-block">
                             
                         </div>
-                        <div class="col-sm-6 col-md-8 col-lg-8 my-3 ">
+                        <div class="col-sm-12 col-md-10 col-lg-10 my-3 ">
                             <div class=" p-3 bg-white rounded-top">
                                 <!-- Default form register -->
                                 <form class="text-center " action="#!">
                                         <div class="row text-left">
-                                        
+                                        <div class="col-12 col-sm-4 col-md-3 mb-3">
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Select Type:  </span>
+                                                </div>
+                                                <div class="col-12 col-sm-7 col-md-7 input-group mb-3">
+                                                  <span class="form-text  text-muted pr-2 font-weight-bold"><h4>True/False</h4>  </span>
+                                                </div>
                                                 <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold">School Name : </span>
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Question Category:  </span>
+                                                </div>
+                                                <div class="col-12 col-sm-8 col-md-8 input-group mb-3">
+                                                    <select class="form-control select2">
+               <option>Select</option> 
+               <option> MC</option> 
+               <option>OE</option> 
+            
+               
+            </select>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-3 mb-3">
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Question Text : </span>
                                                 </div>
                                                 <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="School Name" aria-label="Username" aria-describedby="basic-addon1">
-                                                </div>
+                                                     <textarea class="form-control counted" name="message" placeholder="Type in your Question" rows="12" ></textarea>  <span class="form-text  text-muted pr-2 mt-2 font-weight-bold">&nbsp;<a href=""><i class="fa fa-volume-up  fa-2x" aria-hidden="true"></i></a>
 
-                                                <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold">School Sub Domain Url : </span>
-                                                </div>
-                                                <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="School Domain" aria-label="Username" aria-describedby="basic-addon1">
-                                                </div>
-
-
-
-                                                <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Address Line 1 : </span>
-                                                </div>
-                                                <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="Alabama" aria-label="Username" aria-describedby="basic-addon1">
+</span>
                                                 </div>
                                                 
-                                                <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Address Line 2 : </span>
+                                              
+                                               
+                                                 
+                                               
+                                               <div class="col-12 col-sm-4 col-md-3  mb-3">
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Option1 : </span>
                                                 </div>
-                                                <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="Alabama" aria-label="Username" aria-describedby="basic-addon1">
-                                                </div>
+                                                <div class="col-12 col-sm-8 col-md-7 input-group mb-3">
+                                                  <div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted pr-0  " default for="defaultInline1"><strong>True</strong></label> <span class="form-text  text-muted pr-5 ml-3 mt-0 font-weight-bold">&nbsp;<a href=""><i class="fa fa-volume-up  fa-2x" aria-hidden="true"></i></a>
 
-                                                <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold">State Name :  </span>
+</span>
                                                 </div>
-                                                <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
-                                                    <select class="form-control select2">
-               <option>Select State</option> 
-               <option> hyderabad</option> 
-               <option>mumbai</option> 
-               <option>delhi</option> 
-               
-               
-               
-            </select>
+    
                                                 </div>
+                                                 <div class="col-12 col-sm-4 col-md-3  mb-3">
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Option2 : </span>
+                                                </div>
+                                                <div class="col-12 col-sm-8 col-md-7 input-group mb-3">
+                                                  <div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline2" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted pr-0  " default for="defaultInline2"><strong>False</strong></label> <span class="form-text  text-muted pr-5 ml-3 mt-0 font-weight-bold">&nbsp;<a href=""><i class="fa fa-volume-up  fa-2x" aria-hidden="true"></i></a>
 
-                                                <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold">County Name :  </span>
+</span>
                                                 </div>
-                                                <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
-                                                    <select class="form-control select2">
-               <option>Select County</option> 
-               <option> hyderabad</option> 
-               <option>mumbai</option> 
-               <option>delhi</option> 
-               
-               
-               
-            </select>
+    
                                                 </div>
+                                                
+                                                
 
-                                                <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold">City Name :  </span>
+                                             <div class="col-12 col-sm-4 col-md-3  mb-3">
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Upload Solution : </span>
                                                 </div>
-                                                <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
-                                                    <select class="form-control select2">
-               <option>Select City</option> 
-               <option> hyderabad</option> 
-               <option>mumbai</option> 
-               <option>delhi</option> 
-               
-               
-               
-            </select>
+                                                <div class="col-12 col-sm-8 col-md-7 input-group mb-3">
+                                                     <input class="form-control  pt-1 p-1" id="imgUpload" name="imgUpload" accept="image/*" type="file">
                                                 </div>
-
-
-
-                                                <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Zip Code : </span>
-                                                </div>
-                                                <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="534 534" aria-label="Username" aria-describedby="basic-addon1">
-                                                </div>
-
-
-                                                <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Phone Number 1 : </span>
-                                                </div>
-                                                <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="9876543210" aria-label="Username" aria-describedby="basic-addon1">
-                                                </div>
-
-                                                <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Phone Number 2: </span>
-                                                </div>
-                                                <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="9876543210" aria-label="Username" aria-describedby="basic-addon1">
-                                                </div>
-
-                                                <div class="col-12 col-sm-4 col-md-3 mb-3">
-                                                    <span class="form-text  text-muted pr-2 font-weight-bold">School Admin :  </span>
-                                                </div>
-                                                <div class="col-12 col-sm-8 col-md-9 input-group mb-3">
-                                                        <input type="text" class="form-control" placeholder="School Admin" aria-label="Username" aria-describedby="basic-addon1">
-                                                </div>
-
+                                                
                                                 
                                                 
                                                 
@@ -203,9 +159,8 @@
                                         
                                         <hr>
                                         <!-- Sign up button -->
-                                        <a href="sad_schools.html"> <button type="button" class="btn btn-primary btn-md">Save</button></a>
-                                           <a href="sa_dashbord.html"> <button type="button" class="btn btn-primary btn-md">Cancel</button></a>
-                                        
+                                         <a href="sad_questions.html"><button type="button" class="btn btn-primary btn-md">Save</button></a>
+                                          <a href=""><button type="button" class="btn btn-primary btn-md" onclick="history.back(-1)">Cancel</button></a>
                                         
                                         
     

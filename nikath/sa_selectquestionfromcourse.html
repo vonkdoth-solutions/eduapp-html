@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/hstyle.css">
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="https://kit.fontawesome.com/8b6e3a52ac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/select2.min.css">
+    <script src="js/select2.min.js"></script>
+    <title>Select From Course</title>
+    <!-- Hareesh Added  -->
+    <link rel="stylesheet" href="css/mystyle.css">
+    <!-- Hareesh Added  -->
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand mt-0 pt-0" href="#"><img src="images/logo.png" width="169px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
+            aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div class="container">
+        <nav aria-label="breadcrumb \" class="d-none d-sm-none d-md-block">
+            <ol class="breadcrumb white lighten-4 navbar-light bg-light mt-3">
+                <li class=""><a class="text-success" href="sa_addcountry.html">Dashboard</a><i
+                        class="fas fa-angle-right mx-2" aria-hidden="true"></i></li>
+                <li class=""><a class="text-grey" href="sa_addschool.html">Select Questions From Course</a></li>
+
+            </ol>
+        </nav>
+        <!-- Hareesh Added  -->
+        <div class="page-container text-center bg-white">
+            <h5 class=" border-bottom mb-0 p-3">Select Questions From Course
+                <button class="btn btn-info btn-sm" style="float:right">Apply</button>
+            </h5>
+            <div class="panel-container text-left">
+
+                <div class="panel-left">
+                    <!-- <div class="row"> -->
+                    <!-- <div class="col-12"> -->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text mt-0" for="inputGroupSelect01">Select Course</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option>Select</option>
+                            <option>Course 1</option>
+                            <option>Course 2</option>
+                            <option>Course 3</option>
+                        </select>
+                        <!-- <div class="input-group-append ">
+                            <label class="input-group-text mt-0" for="inputGroupSelect02"><i class="fa fa-refresh"
+                                    aria-hidden="true"></i></label>
+                        </div> -->
+                    </div>
+                    <hr>
+                    <div class="">
+                        <!-- Hareesh Added  -->
+                        <ul class="file-tree">
+                            <li>
+                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck"
+                                        name="example1">
+                                    <label class="custom-control-label harish-custom-label" for="customCheck"></label>
+                                </div>
+                                <a href="#" class="harish-a">Topic 1</a>
+
+
+
+
+                                <ul>
+                                    <li>
+                                        <div class="custom-control custom-checkbox harish-custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1"
+                                                name="example1">
+                                            <label class="custom-control-label" for="customCheck1"></label>
+                                        </div>
+                                        <a href="#" class="harish-a">Topic 1.1</a>
+
+
+
+
+
+                                        <ul>
+                                            <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2"
+                                                        name="example1">
+                                                    <label class="custom-control-label" for="customCheck2"></label>
+                                                </div>
+                                                <a href="#" class="harish-a"> Topic 1.1.1</a>
+                                                <ul>
+                                                    
+                                                   
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck3"
+                                                        name="example1">
+                                                    <label class="custom-control-label harish-custom-label"
+                                                        for="customCheck3"></label>
+                                                </div>
+                                                <a href="#" class="harish-a">Topic 1.1.2</a>
+                                                <ul>
+                                                  
+                                                  
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2"
+                                                        name="example1">
+                                                    <label class="custom-control-label" for="customCheck2"></label>
+                                                </div>
+                                                <a href="#" class="harish-a"> Topic 1.2</a>
+                                                <ul>
+                                            <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2"
+                                                        name="example1">
+                                                    <label class="custom-control-label" for="customCheck2"></label>
+                                                </div>
+                                                <a href="#" class="harish-a"> Topic 1.2.1</a>
+                                                <ul>
+                                                    <li> <a href="#link5"></a> </li>
+                                                    <li> <a href="#link6"></a> </li>
+                                                    <li> <a href="#link7"></a> </li>
+                                                    <li> <a href="#link8"></a> </li>
+                                                    <li> <a href="#"></a>
+                                                       
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck3"
+                                                        name="example1">
+                                                    <label class="custom-control-label harish-custom-label"
+                                                        for="customCheck3"></label>
+                                                </div>
+                                                <a href="#" class="harish-a">Topic 1.2.2</a>
+                                                <ul>
+                                                   
+                                                   
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                            </li>
+  <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2"
+                                                        name="example1">
+                                                    <label class="custom-control-label" for="customCheck2"></label>
+                                                </div>
+                                                <a href="#" class="harish-a"> Topic 1.3</a>
+                                                <ul>
+                                            <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2"
+                                                        name="example1">
+                                                    <label class="custom-control-label" for="customCheck2"></label>
+                                                </div>
+                                                <a href="#" class="harish-a"> Topic 1.3.1</a>
+                                                <ul>
+                                                    
+                                                    <li> <a href="#"></a>
+                                                       
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck3"
+                                                        name="example1">
+                                                    <label class="custom-control-label harish-custom-label"
+                                                        for="customCheck3"></label>
+                                                </div>
+                                                <a href="#" class="harish-a">Topic 1.3.2</a>
+                                                <ul>
+                                                   
+                                                   
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                            </li>
+                                     <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2"
+                                                        name="example1">
+                                                    <label class="custom-control-label" for="customCheck2"></label>
+                                                </div>
+                                                <a href="#" class="harish-a"> Topic 1.4</a>
+                                                <ul>
+                                            <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2"
+                                                        name="example1">
+                                                    <label class="custom-control-label" for="customCheck2"></label>
+                                                </div>
+                                                <a href="#" class="harish-a"> Topic 1.4.1</a>
+                                                <ul>
+                                                    <li> <a href="#link5"></a> </li>
+                                                    <li> <a href="#link6"></a> </li>
+                                                    <li> <a href="#link7"></a> </li>
+                                                    <li> <a href="#link8"></a> </li>
+                                                    <li> <a href="#"></a>
+                                                       
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck3"
+                                                        name="example1">
+                                                    <label class="custom-control-label harish-custom-label"
+                                                        for="customCheck3"></label>
+                                                </div>
+                                                <a href="#" class="harish-a">Topic 1.4.2</a>
+                                                <ul>
+                                                   
+                                                   
+                                                </ul>
+                                            </li>
+                                             <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2"
+                                                        name="example1">
+                                                    <label class="custom-control-label" for="customCheck2"></label>
+                                                </div>
+                                                <a href="#" class="harish-a"> Topic 1.4.3</a>
+                                                <ul>
+                                                    <li> <a href="#link5"></a> </li>
+                                                    <li> <a href="#link6"></a> </li>
+                                                    <li> <a href="#link7"></a> </li>
+                                                    <li> <a href="#link8"></a> </li>
+                                                    <li> <a href="#"></a>
+                                                       
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                            </li>
+                                </ul>
+                            </li>
+                           <li>
+                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck"
+                                        name="example1">
+                                    <label class="custom-control-label harish-custom-label" for="customCheck"></label>
+                                </div>
+                                <a href="#" class="harish-a">Topic 2</a>
+
+
+
+
+                                <ul>
+                                    <li>
+                                        <div class="custom-control custom-checkbox harish-custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1"
+                                                name="example1">
+                                            <label class="custom-control-label" for="customCheck1"></label>
+                                        </div>
+                                        <a href="#" class="harish-a">Topic 2.1</a>
+
+
+
+
+
+                                        <ul>
+                                            <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2"
+                                                        name="example1">
+                                                    <label class="custom-control-label" for="customCheck2"></label>
+                                                </div>
+                                                <a href="#" class="harish-a"> Topic 2.1.1</a>
+                                                <ul>
+                                                    
+                                                   
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck3"
+                                                        name="example1">
+                                                    <label class="custom-control-label harish-custom-label"
+                                                        for="customCheck3"></label>
+                                                </div>
+                                                <a href="#" class="harish-a">Topic 2.1.2</a>
+                                                <ul>
+                                                  
+                                                  
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2"
+                                                        name="example1">
+                                                    <label class="custom-control-label" for="customCheck2"></label>
+                                                </div>
+                                                <a href="#" class="harish-a"> Topic 2.2</a>
+                                                <ul>
+                                            <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2"
+                                                        name="example1">
+                                                    <label class="custom-control-label" for="customCheck2"></label>
+                                                </div>
+                                                <a href="#" class="harish-a"> Topic 2.2.1</a>
+                                                <ul>
+                                                    <li> <a href="#link5"></a> </li>
+                                                    <li> <a href="#link6"></a> </li>
+                                                    <li> <a href="#link7"></a> </li>
+                                                    <li> <a href="#link8"></a> </li>
+                                                    <li> <a href="#"></a>
+                                                       
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck3"
+                                                        name="example1">
+                                                    <label class="custom-control-label harish-custom-label"
+                                                        for="customCheck3"></label>
+                                                </div>
+                                                <a href="#" class="harish-a">Topic 2.2.2</a>
+                                                <ul>
+                                                   
+                                                   
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                            </li>
+  <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2"
+                                                        name="example1">
+                                                    <label class="custom-control-label" for="customCheck2"></label>
+                                                </div>
+                                                <a href="#" class="harish-a"> Topic 2.3</a>
+                                                <ul>
+                                            <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2"
+                                                        name="example1">
+                                                    <label class="custom-control-label" for="customCheck2"></label>
+                                                </div>
+                                                <a href="#" class="harish-a"> Topic 2.3.1</a>
+                                                <ul>
+                                                    
+                                                    <li> <a href="#"></a>
+                                                       
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck3"
+                                                        name="example1">
+                                                    <label class="custom-control-label harish-custom-label"
+                                                        for="customCheck3"></label>
+                                                </div>
+                                                <a href="#" class="harish-a">Topic 2.3.2</a>
+                                                <ul>
+                                                   
+                                                   
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                            </li>
+                                     <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2"
+                                                        name="example1">
+                                                    <label class="custom-control-label" for="customCheck2"></label>
+                                                </div>
+                                                <a href="#" class="harish-a"> Topic 2.4</a>
+                                                <ul>
+                                            <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2"
+                                                        name="example1">
+                                                    <label class="custom-control-label" for="customCheck2"></label>
+                                                </div>
+                                                <a href="#" class="harish-a"> Topic 2.4.1</a>
+                                                <ul>
+                                                    <li> <a href="#link5"></a> </li>
+                                                    <li> <a href="#link6"></a> </li>
+                                                    <li> <a href="#link7"></a> </li>
+                                                    <li> <a href="#link8"></a> </li>
+                                                    <li> <a href="#"></a>
+                                                       
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck3"
+                                                        name="example1">
+                                                    <label class="custom-control-label harish-custom-label"
+                                                        for="customCheck3"></label>
+                                                </div>
+                                                <a href="#" class="harish-a">Topic 2.4.2</a>
+                                                <ul>
+                                                   
+                                                   
+                                                </ul>
+                                            </li>
+                                             <li>
+                                                <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2"
+                                                        name="example1">
+                                                    <label class="custom-control-label" for="customCheck2"></label>
+                                                </div>
+                                                <a href="#" class="harish-a"> Topic 2.4.3</a>
+                                                <ul>
+                                                    <li> <a href="#link5"></a> </li>
+                                                    <li> <a href="#link6"></a> </li>
+                                                    <li> <a href="#link7"></a> </li>
+                                                    <li> <a href="#link8"></a> </li>
+                                                    <li> <a href="#"></a>
+                                                       
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                            </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!--End Hareesh Added  -->
+                    </div>
+                    <!-- </div> -->
+
+                    <!-- </div> -->
+                </div>
+
+                <div class="splitter">
+                </div>
+
+                <div class="panel-right">
+                     <table class="table  table-hover">
+                <thead>
+                    <tr>
+                       
+                        <th class="text-left" scope="col">Question Category</th>
+                         <th scope="col">Question Type</th>
+                          <th scope="col">Number Of Questions</th>
+                            <th scope="col">Difficulty Level</th>
+                              <th scope="col">Upload Work</th>
+                              <th scope="col">Date Added</th>
+
+
+                       
+                         <th scope="col"><div class="custom-control custom-checkbox custom-control-inline pr-1" title="select All">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline9" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text   font-weight-bold pr-0  " default for="defaultInline9">Select</label>
+                                                </div></th>
+                             <!--<th scope="col">Imported</th>-->
+                       
+                       
+                        <th scope="col" class="text-right">
+                            <div class="text-nowrap"> View </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                       
+                        <td class="text-left">Reducing Fraction&nbsp;</td>
+                         <td>MC</td>
+                         <td>10</td>
+                           <td>1</td>
+                           <td> <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck11"
+                                        name="example1">
+                                    <label class="custom-control-label harish-custom-label" for="customCheck11"></label>
+                                </div></td>
+                             <td>22/02/2020</td>
+
+                          <td ><div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline3" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline3"></label>
+                                                </div></td>
+                           <!-- <td class="text-center">
+                            <div class="text-nowrap">
+                                <i class="fas fa-check"></i>
+                              
+                              </div></td>-->
+                       
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                               
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                              
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                        <td class="text-left">Adding Fraction&nbsp;</td>
+                        <td>MC</td>
+                         <td>8</td>
+                            <td>1</td>
+                            <td> <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck12"
+                                        name="example1">
+                                    <label class="custom-control-label harish-custom-label" for="customCheck12"></label>
+                                </div></td>
+                             <td>22/02/2020</td>
+                          <td><div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1"></label>
+                                                </div></td>
+                      <!-- <td class="text-center">
+                            <div class="text-nowrap">
+                                <i class="fas fa-check"></i>
+                              
+                              </div></td>-->
+                        
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                               
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                              
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                   
+                       
+                        <td class="text-left">Adding Fraction&nbsp;</td>
+                        <td>OE</td>
+                         <td>6</td>
+                            <td>1</td>
+                            <td> <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck13"
+                                        name="example1">
+                                    <label class="custom-control-label harish-custom-label" for="customCheck13"></label>
+                                </div></td>
+                             <td>22/02/2020</td>
+                          <td><div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline2" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline2"></label>
+                                                </div></td>
+                       <!-- <td class="text-center">
+                            <div class="text-nowrap">
+                                <i class="fas fa-check"></i>
+                              
+                              </div></td>-->
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                             
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                               
+                            </div>
+                        </td>
+                    </tr>
+                      <tr>
+                   
+                       
+                        <td class="text-left">Dividing Fraction&nbsp;</td>
+                        <td>MC</td>
+                         <td>6</td>
+
+                           <td>1</td>
+                           <td> <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck14"
+                                        name="example1">
+                                    <label class="custom-control-label harish-custom-label" for="customCheck14"></label>
+                                </div></td>
+                            <td>22/02/2020</td>
+                          <td><div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline6" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline6"></label>
+                                                </div></td>
+                       <!-- <td class="text-center">
+                            <div class="text-nowrap">
+                                <i class="fas fa-check"></i>
+                              
+                              </div></td>-->
+                        
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                            
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                              
+                            </div>
+                        </td>
+                    </tr>
+                     <tr>
+                   
+                       
+                        <td class="text-left">Dividing Fraction&nbsp;</td>
+                        <td>MC</td>
+                         <td>6</td>
+
+                           <td>1</td>
+                           <td> <div class="custom-control custom-checkbox harish-custom-checkbox ">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck15"
+                                        name="example1">
+                                    <label class="custom-control-label harish-custom-label" for="customCheck15"></label>
+                                </div></td>
+                            <td>22/02/2020</td>
+                          <td><div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline18" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline18"></label>
+                                                </div></td>
+                       <!-- <td class="text-center">
+                            <div class="text-nowrap">
+                                <i class="fas fa-check"></i>
+                              
+                              </div></td>-->
+                        
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                            
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                              
+                            </div>
+                        </td>
+                    </tr>
+                      <tr>
+                   
+                       
+                        <td class="text-left">Multiplying Fraction&nbsp;</td>
+                        <td>MC</td>
+                         <td>6</td>
+
+                           <td>1</td>
+                           <td> <div class="custom-control custom-checkbox custom-control-inline ">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck16"
+                                        name="example1">
+                                    <label class="custom-control-label harish-custom-label" for="customCheck16"></label>
+                                </div></td>
+                            <td>22/02/2020</td>
+                          <td><div class="custom-control custom-checkbox custom-control-inline ">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck17"
+                                        name="example1">
+                                    <label class="custom-control-label harish-custom-label" for="customCheck17"></label>
+                                                </div></td>
+                       <!-- <td class="text-center">
+                            <div class="text-nowrap">
+                                <i class="fas fa-check"></i>
+                              
+                              </div></td>-->
+                        
+                        <td class="text-right">
+                            <div class="text-nowrap">
+                               
+                                <button class="btn btn-link"> <i class="fas fa-eye text-success"></i></button>
+                               
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+                </div>
+            </div>
+             <div class="text-center mt-3 border-top mb-3 mt-3">
+
+             <button type="button" onclick="history.back(-1)" class="btn btn-primary btn-md mt-2">Previous </button>
+                      <button type="button" class="btn btn-primary btn-md mt-2 ">Complete </button>
+                        <button type="button" class="btn btn-primary btn-md mt-2">Cancel </button>
+
+                    </div>
+
+        </div>
+
+    </div>
+    <!-- Edula Hareesh Added  -->
+
+    <footer class="page-footer font-small navbar-light bg-light  mt-4">
+        <div class="footer-copyright text-center py-3">© 2020 - 2021 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> EDU APP | VONKDOTH PRODUCT</a>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://rawgit.com/RickStrahl/jquery-resizable/master/src/jquery-resizable.js'></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>  -->
+    <script src="js/hscript.js"></script>
+    <script src="js/file-explore.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".file-tree").filetree();
+        });
+    </script>
+</body>
+
+</html>

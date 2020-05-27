@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+     <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://kit.fontawesome.com/8b6e3a52ac.js" crossorigin="anonymous"></script>
+    <link  rel="stylesheet" href="css/select2.min.css">
+<script src="js/select2.min.js"></script>
+    <title>profile setting</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+              <a class="navbar-brand mt-0 pt-0" href="#"><img src="images/logo.png" width="169px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                    
+                </ul>
+                <form class="form-inline my-2 my-md-0">
+                    
+                </form>
+                 
+            </div>
+        </div>
+    </nav>
+     <!-- Modal search-->
+    <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="searchmodal">
+                <div class="modal-header">
+                     <h4 class="text-primary text-center"><b>Change Password</b></h4> 
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class=" col-4 mb-1">
+
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Current Password* : </span>
+                                                </div>
+                                                <div class="col-8 mb-1">
+                                                      <input type="text" class="form-control" placeholder="Enter Password" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                                <div class=" col-4 mb-1">
+
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">New Password* : </span>
+                                                </div>
+                                                <div class="col-8 mb-2">
+                                                      <input type="text" class="form-control" placeholder="Enter New Password" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                                <div class=" col-4 mb-1">
+
+                                                    <span class="form-text  text-muted pr-2 font-weight-bold">Re-enter New Password : </span>
+                                                </div>
+                                                <div class="col-8 mb-1">
+                                                      <input type="text" class="form-control" placeholder="Re-Enter Password" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                              </div>
+                </div>
+                <div class="modal-footer">
+                      <a href="sa_questionsrepisotery.html"> <button type="button"
+                                        class="btn btn-primary btn-md">Save</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search -->
+     <div class="container">
+        
+           <nav aria-label="breadcrumb \" class="d-none d-sm-none d-md-block">
+                <ol class="breadcrumb white lighten-4 navbar-light bg-light mt-3">
+                    <li class=""><a class="text-success" href="sa_dashbord.html">Dashboard</a><i class="fas fa-angle-right mx-2"
+                            aria-hidden="true"></i></li>
+                    <li class=""><a class="text-grey" href="sa_addcity.html">Settings</a></li>
+                    
+                </ol>
+            </nav>
+           <section>
+            
+            
+                <div class="sedsec border px-3 mt-4">
+          <div class="row  text-black">
+            <div class="col-12  mytabs pt-3 pb-1 text-center border-bottom text-black">
+                            <h5 class="h5 text-black">
+                                Profile Settings</h5>
+                               
+                        </div>
+                        
+            <div class="col-sm-6 col-md-4 col-lg-4 my-3">
+                        <form class="text-center " action="#!">
+              <div class="text-center">
+                <h5>Change Profile Picture</h5>
+              <img src="https://via.placeholder.com/350" class="rounded-top" alt="img" width="100%">
+              <input class="form-control mt-3 pt-1 p-1" id="imgUpload" name="imgUpload" accept="image/*" type="file">
+                <!--i class="fas fa-swimmer fa-7x reg-licn mt-5" width="100%"></i-->
+                
+              </div>
+               <!--left col-->
+            <ul class="list-group mt-3">
+                <li class="list-group-item " contenteditable="false"><strong>Profile</strong></li>
+                <li class="list-group-item text-left"><span class="float-left"><strong class="">Joined</strong></span> <span class="float-right">22.2.2.18</span></li>
+                <li class="list-group-item text-left"><span class="float-left"><strong class="">last Seen</strong></span> <span class="float-right">Yesterday</span></li>
+                   <li class="list-group-item text-left"><span class="float-left"><strong class="">Super Admin</strong></span> <span class="float-right">Joseph</span></li>
+            
+            </ul>
+
+            </div>
+
+            <div class="col-sm-6 col-md-8 col-lg-8 my-3 border-left">
+              <div class=" p-3 bg-white rounded-top">
+                <!-- Default form register -->
+                <form class="text-center " action="#!">
+                  <div class="card p-3">
+                                        <div class="row text-left  z-depth-5 rounded text-muted mb-3">
+                                            <div class="col-12   border-bottom">
+                                                <div class="row pt-2">
+                                                   <div class="col-10">
+                                                    <h5 class="text-muted h5">Change password </h5>
+                                                   </div>
+                                                   <div class="col-2 text-right">
+
+                                                         <a class="nav-link waves-effect waves-light" data-toggle="modal"
+                            data-target="#basicExampleModal"> <i class="fas fa-edit text-primary "></i></a>
+                                                   </div>
+                                            </div>
+                                            </div>
+                                            <div class="col-12   border-bottom">
+                                                <div class="row pt-2">
+                                                   <div class="col-10">
+                                                    <h5 class="text-muted h5">Change Profile Name </h5>
+                                                   </div>
+                                                   <div class="col-2 text-right">
+                                                        <a class="nav-link waves-effect waves-light" data-toggle="modal"
+                            data-target="#basicExampleModal"> <i class="fas fa-edit text-primary "></i></a>
+                                              
+                                                   </div>
+                                            </div>
+                                            </div>
+                                            <div class="col-12   border-bottom">
+                                                <div class="row pt-2">
+                                                   <div class="col-10">
+                                                    <h5 class="text-muted h5">Change Email </h5>
+                                                   </div>
+                                                   <div class="col-2 text-right">
+                                                      <a class="nav-link waves-effect waves-light" data-toggle="modal"
+                            data-target="#basicExampleModal"> <i class="fas fa-edit text-primary "></i></a>
+                                              
+                                                   </div>
+                                            </div>
+                                            </div>
+                                            <div class="col-12   border-bottom">
+                                                <div class="row pt-2">
+                                                   <div class="col-10">
+                                                    <h5 class="text-muted h5">Allow Notificatios </h5>
+                                                   </div>
+                                                   <div class="col-2 text-right">
+                                                     <label class="switch" for="checkbox">
+    <input type="checkbox" id="checkbox" />
+    <div class="slider round"></div>
+  </label>
+                                                   </div>
+                                            </div>
+                                            </div>
+                                           
+                                            
+                                          
+                                        </div>
+                                      </h6>
+                                    </h6>
+                                  </div>
+                                            </form>
+                                            </div>
+                                            </div>
+                                            </div>
+
+                                        
+                                        <hr>
+  <div class="text-center mt-0 mb-1">
+                                <!-- Sign up button -->
+                                
+                               
+                            </div>
+
+    
+                                   
+                <!-- Default form register -->
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        </section>
+        <!-- 2nd Section End -->
+        
+    </div>
+<script>
+    $('.select2').select2();
+</script>
+<footer class="page-footer font-small navbar-light bg-light  mt-4">
+
+        <!-- Footer Links -->
+       
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 - 2021 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> EDU APP | VONKDOTH PRODUCT</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

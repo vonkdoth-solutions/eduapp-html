@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/8b6e3a52ac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/select2.min.css">
+    <script src="js/select2.min.js"></script>
+    <title>Questionspage1</title>
+    <style type="text/css">
+        .list-inline-item{
+        border-radius: 50% !important;
+        background: #fff;
+        margin: 5px;
+        cursor: pointer;
+        padding: 0.43rem 0.89rem;
+        }
+        
+        .list-inline-item:hover{
+        background: #ddd;
+        }
+        
+      </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand mt-0 pt-0" href="#"><img src="images/logo.png" width="169px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
+                aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class=" my-3 ">
+            <div class="row shadow-sm p-2 bg-white rounded text-right">
+              <div class=" col-6 text-right">
+                <body onload="startTime()">
+                <p id="demo" style="{
+  text-align: left;
+  font-size: 200px;
+  margin-left: 100px !important;
+  margin-top: 10px !important;
+
+}"></p>
+<div id="txt"></div></body>
+</div>
+<div class="col-6 text-right">
+                <button class="btn btn-info ">Note</button>
+                <button class="btn btn-info ">Prev</button>
+                <button class="btn btn-info ">Next</button>
+                <button class="btn btn-info ">Submit</button>
+                <button class="btn btn-info "><i class="fas fa-envelope"></i></button>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-sm-12 ">
+                <div class="shadow-sm p-2 bg-white rounded  mb-2">
+                    <h6 class="text-center font-weight-bold">Question : 8
+                        <i class="fas fa-volume-up text-info text-right" style="position: absolute; right: 1.7rem;"></i>
+                    </h6>
+                </div>
+                <div class="shadow-sm p-2 bg-white rounded  mb-2">
+                    <p class="font-weight-bold"> Explain The Steps How you Would Solve a Linear Equation</p>
+                  <textarea class="form-control counted" name="message" placeholder="Explain Here" rows="10" ></textarea>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-12  ">
+                <div class="shadow-sm p-2 bg-white rounded   mb-2">
+                    <h6 class="font-weight-bold text-center">progress</h6>
+                    <div class="progress font-weight-bold ">
+                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 29%" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <ul class="list-inline list-inline-horizontal mt-2 justify-content-left border-top">
+                        <li class="list-inline-item bg-danger text-white " data-toggle="tooltip" data-placement="top" title="Wrong">1</li>
+                        <li class="list-inline-item bg-info text-white" data-toggle="tooltip" data-placement="top" title="Right">2</li>
+                        <li class="list-inline-item bg-primary test-white" data-toggle="tooltip" data-placement="top" title="Skip">3</li>
+                        <li class="list-inline-item bg-danger text-white" data-toggle="tooltip" data-placement="top" title="Wrong">4</li>
+                        <li class="list-inline-item bg-danger text-white" data-toggle="tooltip" data-placement="top" title="Wrong">5</li>
+                        <li class="list-inline-item bg-info text-white" data-toggle="tooltip" data-placement="top" title="Right">6</li>
+                        <li class="list-inline-item bg-info text-white" data-toggle="tooltip" data-placement="top" title="Right">7</li>
+                        <li class="list-inline-item bg-success" data-toggle="tooltip" data-placement="top" title="current">8</li>
+                        <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Unanswered">9</li>
+                        <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Unanswered">10</li>
+                        <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Unanswered">11</li>
+                        <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Unanswered">12</li>
+                        <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Unanswered">13</li>
+                        <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Unanswered">14</li>
+                        <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Unanswered">15</li>
+                        <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Unanswered">16</li>
+                        <li class="list-inline-item " data-toggle="tooltip" data-placement="top" title="Unanswered">17</li>
+                       </ul>
+                </div>
+                
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    <footer class="page-footer font-small navbar-light bg-light  mt-4">
+
+        <!-- Footer Links -->
+
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 - 2021 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> EDU APP | VONKDOTH PRODUCT</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script >
+   $(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+    </script>
+    <script >
+       function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+    </script>
+</body>
+
+</html>

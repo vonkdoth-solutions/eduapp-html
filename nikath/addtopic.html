@@ -9,56 +9,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/mystyle.css">
-     <script src="js/jquery-3.4.1.min.js"></script>
+     <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="https://kit.fontawesome.com/8b6e3a52ac.js" crossorigin="anonymous"></script>
     <link  rel="stylesheet" href="css/select2.min.css">
 <script src="js/select2.min.js"></script>
     <title>Add topics</title>
 </head>
-<script>
-function setLevel(level_value){
-$('#level_selector').val(level_value);
-$("input:checkbox").prop('checked', false);
-$("#defaultInline"+level_value).prop('checked', true);
-}	
-function createChild() {
-	var number_of_childs = $('#number_of_childs').val();
-	console.log('num of childs='+number_of_childs);
-	if( number_of_childs !=0 ) {
-	for( var i=1; i<=number_of_childs; i++){
-	var level = $('#level_selector').val();
-	if( level == '' ) { 
-	append_to = 'main_area';
-	$('#'+append_to).append('<div class="col-12 row" id="main_area'+i+'"><div class="col-12  col-sm-12 col-md-3 mb-3" ><i class="fas fa-minus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" class="custom-control-input" id="defaultInline'+i+'" onclick="setLevel('+i+')"><label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline'+i+'">Topic '+i+'</label></div><!-- Default inline 2--></div><div class="col-12 col-sm-12 col-md-9  mb-3 "><input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1"></div></div>');
-	}
-	else {
-	indent = '';
-	level_found = (level.match(/./g) || []).length; 
-	for( var ls=0;ls<=level_found;ls++) {
-		if( indent == '') { indent = '&nbsp;&nbsp;&nbsp;'; }
-		else { indent = '&nbsp;&nbsp;&nbsp;';}
-	} 
-	append_to = 'main_area'+level;
-	console.log('indent='+indent);
-	console.log('level='+level);
-	console.log('level found='+level_found);
-	console.log('append to='+append_to);
-	console.log('id='+'main_area'+level+'.'+i);
-	if( level_found == 0 || level_found == 1 ) { 
-	$('#'+append_to).append('<div class="col-12 row" id="sub_area'+level+'.'+i+'"><div class="col-12  col-sm-12 col-md-3 mb-3" >'+indent+'<i class="fas fa-minus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline"><input type="checkbox" class="custom-control-input" id="defaultInline'+level+'.'+i+'" onclick="setLevel('+level+'.'+i+')"><label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline'+level+'.'+i+'">'+level+'.'+i+'</label></div><!-- Default inline 2--></div><div class="col-12 col-sm-12 col-md-9  mb-3 ">&nbsp;<input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1"></div></div>');
-   }
-   if( level_found ==2 || level_found == 3) {
-   	$('#sub_area1.1').append('Hi');
-   }
-	} 	
-	
-}
-}
-//$('input:checkbox:checked').removeAttr('checked');
-$("input:checkbox").prop('checked', false);
-$('#level_selector').val(0);
-}
-</script>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -120,15 +77,21 @@ $('#level_selector').val(0);
                                                     
                                                 </div>
                                                  <div class="col-12 col-sm-6 col-md-4  mb-3 ">
-                                                 <input type="number" class="form-control" id='number_of_childs' max='25'>    
-            									<input type='text' id='level_selector'>
+                                                     <select class="form-control select2">
+               <option>Select levels</option> 
+               <option>Car</option> 
+               <option>Bike</option> 
+               <option>Scooter</option> 
+               <option>Cycle</option> 
+               <option>Horse</option> 
+            </select>
                                                     
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-4 pt-1 mb-3 ">
                                                   
                                                       <button type="button" class="btn btn-primary btn-sm "><i class="fas fa-trash-alt"></i> Delete</button>
 
-                                                     &nbsp; </i> <button type="button" class="btn btn-primary btn-sm " onclick='createChild()'>Create</button></div>
+                                                     &nbsp; </i> <button type="button" class="btn btn-primary btn-sm ">Create</button></div>
 
                                                       <div class="col-12 col-sm-4 col-md-3 mb-2">
                                                     <span class="form-text  text-muted pr-2 font-weight-bold">Upload <i class="fas fa-info-circle"></i> :</span>
@@ -136,11 +99,107 @@ $('#level_selector').val(0);
                                                  <div class="col-12 col-sm-8 col-md-9  mb-2">
                                                     <input class="form-control  pt-1 p-1" id="imgUpload" name="imgUpload" accept="image/*" type="file">
                                                 </div>
-                                             <div class="col-12 col-sm-12 col-md-12  mb-2 border-bottom" id="main_area"></div>
-                                                                 
+                                             <div class="col-12 col-sm-12 col-md-12  mb-2 border-bottom"></div>
+                                             <div class="col-12 row">
+                                             <div class="col-12  col-sm-12 col-md-3 mb-3" >
+                                               
+                                           <i class="fas fa-plus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1">Topic 1</label>
+                                                </div>
+    
+                                                <!-- Default inline 2-->
+                                               
+                                            </div>
+
+                                                <div class="col-12 col-sm-12 col-md-9  mb-3 ">
+                                                  <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+                                             <div class="col-12 row">
+                                             <div class="col-12  col-sm-12 col-md-3 mb-3 text-center" >
+                                               
+                                            &nbsp;    <i class="fas fa-plus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1">Topic 1.1</label>
+                                                </div>
+    
+                                                <!-- Default inline 2-->
+                                               
+                                            </div>
+
+                                                <div class="col-12 col-sm-12 col-md-9  mb-3 ">
+                                                  <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+                                             <div class="col-12 row">
+                                            <div class="col-12 col-sm-12 col-md-3 text-right  mb-3">
+                                               
+                                          <i class="fas fa-plus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1">Topic</label>
+                                                </div>
+    
+                                                <!-- Default inline 2-->
+                                               
+                                            </div>
+
+                                                <div class="col-12 col-sm-12 col-md-9  mb-3 ">
+                                                  <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+                                             <div class="col-12 row">
+                                             <div class="col-12  col-sm-12 col-md-3 mb-3" >
+                                               
+                                           <i class="fas fa-plus mt-2"></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1">Topic 2</label>
+                                                </div>
+    
+                                                <!-- Default inline 2-->
+                                               
+                                            </div>
+
+                                                <div class="col-12 col-sm-12 col-md-9  mb-3 ">
+                                                  <input type="text" class="form-control" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                                             <div class="col-12 row">
+                                            
+                                               
+                                           <i class="fas fa-plus mt-2 "></i>&nbsp;&nbsp;<div class="custom-control custom-checkbox custom-control-inline pr-1">
+                                                  <input type="checkbox" class="custom-control-input" id="defaultInline1" name="course" value= 'all_users'  >
+                                                  <label class="custom-control-label form-text  text-muted  font-weight-bold pr-0  " default for="defaultInline1">Topic 2</label>
+                                                </div>
+    
+                                                <!-- Default inline 2-->
+                                               
+                                          
+
+                                                
+                                                  <input type="text" class="form-control  offset-md-2 mt-0" placeholder="Real Numbers" aria-label="Username" aria-describedby="basic-addon1">
                                              
+                                            </div>
                                         </div>
                                     </div>
+                                                   
+                                               
+                                          
+                                      
+
+                                        
                                         <hr>
                                         <!-- Sign up button -->
                                         <div class="text-center mb-3">
@@ -158,6 +217,9 @@ $('#level_selector').val(0);
 </div>
 </section>
 </div>
+<script>
+    $('.select2').select2();
+</script>
 <footer class="page-footer font-small navbar-light bg-light  mt-4">
 
         <!-- Footer Links -->
